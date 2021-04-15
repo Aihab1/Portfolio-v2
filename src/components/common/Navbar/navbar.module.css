@@ -1,0 +1,33 @@
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 10%;
+    justify-content: space-between;
+    color: white;
+    font-size: 0.9rem;
+    opacity: 0;
+    animation: appear 1s ease-in-out forwards 0.5s;
+    z-index: 50;
+}
+
+.links {
+    display: flex;
+    flex-direction: space-around;
+}
+
+.links > div {
+    padding-left: 45px;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
