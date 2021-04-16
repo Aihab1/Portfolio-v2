@@ -11,4 +11,10 @@
     width: max-content;
     min-width: 100px;
     opacity: 0.8;
+    border-radius: 5px;
+    cursor: default;
+}
+
+.skill:hover {
+    opacity: 0.9;
 }
