@@ -125,7 +125,7 @@
 
 .contactInner p {
   padding: 10px 15px;
-  border-radius: 15px;
+  border-radius: 25px;
   background: rgba(0,0,0,0.9);
   width: 100%;
   margin: 20px 0 10px 0;
@@ -139,7 +139,7 @@
 
 .contactInner p:hover {
   background: rgba(0,0,0,0.8);
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 /* .contactInner p img {
@@ -160,16 +160,37 @@
   margin: 20px 0;
 }
 
+.logoContainer ul {
+  list-style: none;
+}
+.logoContainer li {
+  display: inline-block;
+  background: rgba(0,0,0,0.9);
+  padding: 6px 6px 0 6px;
+  border-radius: 50%;
+  margin: 0 7px;
+}
+
+.logoContainer li:hover {
+  border-radius: 15px;
+  background: rgba(0,0,0,0.8);
+}
+
 .logoContainer svg {
+  fill: white;
+  width: 45px;
+}
+
+/* .logoContainer svg {
   width: 50px;
   height: 50px;
   fill: white;
   padding: 10px;
-  border-radius: 15px;
+  border-radius: 25px;
   background: rgba(0,0,0,0.9);
 }
 
 .logoContainer svg:hover {
-  border-radius: 25px;
+  border-radius: 15px;
   background: rgba(0,0,0,0.8);
-}
+} */
