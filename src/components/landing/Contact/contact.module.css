@@ -49,7 +49,7 @@
   top: 50%;
   left: 0;
   transform: translateY(-50%);
-  background-color: #5F7462;
+  background-color: #120F30;
   padding: 10px 0;
 }
 
@@ -96,14 +96,22 @@
   width: 100%;
   overflow: hidden;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 20px;
 }
 
-.contactBackground img {
+.contactBackground .backgroundImage {
   min-width: 100%;
   min-height: 400px;
-  opacity: 0.7;
-  filter: grayscale(1);
+  opacity: 0.9;
+  filter: invert(1);
   pointer-events: all;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 /* .contactBackground img:hover {
@@ -111,21 +119,57 @@
 } */
 
 .contactInner {
-  width: 80%;
-  background: pink;
+  width: 100%;
+  /* background: pink; */
 }
 
 .contactInner p {
   padding: 10px 15px;
-  border-radius: 5px;
-  background: rgba(0,0,0,0.8);
-  backdrop-filter: blur(10px);
-  width: 316px;
-  margin: 13px 0;
+  border-radius: 15px;
+  background: rgba(0,0,0,0.9);
+  width: 100%;
+  margin: 20px 0 10px 0;
   z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
   /* border: 2px solid rgb(36, 35, 35); */
 }
 
-/* .contactInner p:hover {
-  backdrop-filter: blur(0);
+.contactInner p:hover {
+  background: rgba(0,0,0,0.8);
+  border-radius: 25px;
+}
+
+/* .contactInner p img {
+  width: 20px;
+  height: 20px;
+  margin-right: 20px;
 } */
+
+/* .contactInner img {
+  width: 45px;
+  height: 45px;
+} */
+
+.logoContainer{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.logoContainer svg {
+  width: 50px;
+  height: 50px;
+  fill: white;
+  padding: 10px;
+  border-radius: 15px;
+  background: rgba(0,0,0,0.9);
+}
+
+.logoContainer svg:hover {
+  border-radius: 25px;
+  background: rgba(0,0,0,0.8);
+}
