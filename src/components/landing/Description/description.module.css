@@ -48,7 +48,7 @@
   top: 50%;
   transform: translateY(-50%);
   right: 0;
-  background: linear-gradient(to left, #004E9A 10%, #080742 80%, #000000);
+  background: linear-gradient(to left, #4568DC,#120F30);
   width: 0;
   height: 100%;
   z-index: -1;
