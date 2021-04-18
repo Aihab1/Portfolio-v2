@@ -1,6 +1,7 @@
 .outer {
-  width: 80%;
-  /* position: relative; */
+  width: 100%;
+  position: relative;
+  overflow: hidden;
 }
 .description {
   display: flex;
@@ -9,7 +10,7 @@
   justify-content: center;
   width: 100%;
   min-height: 100vh;
-  padding: 85px 0;
+  padding: 85px 10%;
   z-index: 2;
 }
 
@@ -45,16 +46,38 @@
 
 .background {
   position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  top: 0;
   right: 0;
-  background: linear-gradient(to left, #4568DC,#120F30);
+  /* background: #190061; */
+  background: linear-gradient(to right,#000, #0c0032, #190061, #272471);
   width: 0;
   height: 100%;
   z-index: -1;
   opacity: 0.8;
   animation: slide-in 1s ease-out forwards 4.3s;
 }
+
+/* .background:before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 90%;
+  height: 400px;
+  background: #0c0032;
+}
+
+.background:after{
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  width: 80%;
+  height: 400px;
+  background: #190061;
+} */
 
 .buttondiv {
   margin-top: 35px;

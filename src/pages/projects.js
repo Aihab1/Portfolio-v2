@@ -1,4 +1,5 @@
 import React from 'react'
+import Footer from '../components/common/Footer/footer'
 import Navbar from '../components/common/Navbar/navbar'
 import ProjectsGrid from '../components/common/ProjectsGrid/projectsGrid'
 
@@ -9,6 +10,7 @@ const projects = () => {
             <div className="projects-outer">
                 <ProjectsGrid />
             </div>
+            <Footer />
         </div>
     )
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../components/common/Navbar/navbar'
+import Footer from '../components/common/Footer/footer'
 import IntroDiv from '../components/landing/Intro/intro'
 import Description from '../components/landing/Description/description'
 import About from '../components/landing/About/about'
@@ -16,6 +17,7 @@ export default function Home() {
         <About />
         <FeaturedProjects />
         <Contact />
+        <Footer />
       </div>
     </div>
   )
