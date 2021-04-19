@@ -1,6 +1,6 @@
 import React from 'react'
-import Footer from '../components/common/Footer/footer'
 import Navbar from '../components/common/Navbar/navbar'
+import Footer from '../components/common/Footer/footer'
 import ProjectsGrid from '../components/common/ProjectsGrid/projectsGrid'
 
 const projects = () => {
