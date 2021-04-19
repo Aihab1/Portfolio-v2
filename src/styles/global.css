@@ -92,3 +92,9 @@ img {
         overflow: auto;
     }
 } */
+
+@media screen and (max-width: 1100px) {
+  .projects-outer {
+    width: 90%;
+  }
+}

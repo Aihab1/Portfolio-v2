@@ -166,3 +166,19 @@
   fill: white;
   width: 45px;
 }
+
+@media screen and (max-width: 1100px) {
+  .contactOuter h1 {
+    margin-left: 5%;
+  }
+  .subheading2 {
+    padding-left: 5%;
+  }
+  .device {
+    left: 5%;
+    transform: translateX(-5%);
+  }
+  .contact {
+    height: 450px;
+  }
+}
