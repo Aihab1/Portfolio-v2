@@ -7,9 +7,6 @@ const about = () => {
     return (
         <div id="about" className={classes.outer}>
             <div className={classes.about}>
-                <div className={classes.imageHolder}>
-                    <img src={collegeImage} alt="IIT BHU" />
-                </div>
                 <div className={classes.subheading}>
                     <p>ABOUT ME</p><hr></hr>
                 </div>
@@ -17,6 +14,9 @@ const about = () => {
                     <h1>IIT BHU</h1>
                     <p style={{ marginTop: '-10px', marginBottom: '10px' }}>2019-2023</p>
                     <p>I am currently pursuing my B.Tech in Chemical Engineering at IIT BHU. I have keen interest in Web Development, DS & Algo and I also do competitive programming occasionally. I am an ardent follower of the latest front-end technologies and I can also do a bit of back-end.</p>
+                </div>
+                <div className={classes.imageHolder}>
+                    <img src={collegeImage} alt="IIT BHU" />
                 </div>
             </div>
             <div className={classes.subOuter}>

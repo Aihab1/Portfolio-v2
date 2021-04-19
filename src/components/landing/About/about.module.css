@@ -50,6 +50,7 @@
   background: rgba(255, 255, 255, 0.1);
   backdrop-filter: blur(10px);
   border-radius: 5px;
+  z-index: 3;
 }
 
 .content:hover {
@@ -136,5 +137,31 @@
   }
   .content h1 {
     font-size: 2.7rem;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .outer {
+    margin: 85px 0 47.5px 0;
+  }
+  .skills {
+    padding: 85px 0 0 0;
+  }
+  .imageHolder {
+    margin-top: 30px;
+    position: static;
+    width: 100%;
+    transform: translateY(0);
+  }
+  .imageHolder img {
+    opacity: 1;
+  }
+  .content {
+    width: 80%;
+    max-width: 100%;
+    backdrop-filter: none;
+  }
+  .content:hover {
+    background: rgba(255, 255, 255, 0.1);
   }
 }
