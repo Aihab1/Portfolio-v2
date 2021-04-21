@@ -17,6 +17,10 @@ hr {
   border: 1px solid white;
 }
 
+.outermost-index-div.light hr {
+  border: 1px solid #3500d3;
+}
+
 .outermost-index-div {
   background: #000;
   color: white;
@@ -25,7 +29,7 @@ hr {
 }
 
 .outermost-index-div.light {
-  background: #3aafa9;
+  background: white;
   color: black;
 }
 

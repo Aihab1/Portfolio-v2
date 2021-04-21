@@ -17,15 +17,16 @@
 }
 
 .skill.light {
-    border: 2px solid #2b7a78;
-    background: #def2f1;
+    border: 2px solid #3500d3;
+    background: white;
     color: black;
     opacity: 1;
 }
 
 .skill.light:hover {
     opacity: 1;
-    border: 2px solid black;
+    background: #240090;
+    color: white;
 }
 
 .skill:hover {

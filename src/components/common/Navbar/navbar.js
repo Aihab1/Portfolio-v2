@@ -26,7 +26,7 @@ const Navbar = (props) => {
                 <div><Link to="/#featuredProjects" onClick={navbarCloseHandler}>PROJECTS</Link></div>
                 <div><Link to="/#contact" onClick={navbarCloseHandler}>CONTACT</Link></div>
                 <div onClick={navbarCloseHandler}>RESUME</div>
-                <div onClick={props.toggleLightMode}>LIGHT MODE</div>
+                <div onClick={props.toggleLightMode}>{props.lightMode ? 'DARK MODE':'LIGHT MODE'}</div>
             </div>
             <div className={classes.hamburger + ' ' + (navbarOpen && ' ' + classes.open)}>
                 <button onClick={navbarToggleHandler}>

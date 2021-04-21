@@ -29,6 +29,10 @@
   border-radius: 5px;
 }
 
+.projectsOuter.light .box {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
 .box img {
   min-width: 100%;
   height: 100%;
@@ -53,6 +57,10 @@
   
   transition: all 0.3s ease-out;
   position: relative;
+}
+
+.projectsOuter.light .content {
+  background: rgba(255, 255, 255, 0.4);
 }
 
 .contentInner {
@@ -86,6 +94,10 @@
 .contentInner svg {
   fill: white;
   /* margin: 10px; */
+}
+
+.projectsOuter.light .contentInner svg {
+  fill: black;
 }
 
 .subheading2 {

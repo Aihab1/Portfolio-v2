@@ -122,15 +122,15 @@ const allProjects = [{
     time: 'March 2020'
 }]
 
-const projectsGrid = () => {
+const projectsGrid = (props) => {
     const all = []
     for (let project of allProjects) {
         all.push(
             <div key={project.name} className={classes.box}>
                 <div className={classes.content}>
                     <div className={classes.contentInner}>
-                        <p style={{ fontWeight: 300, marginBottom: '10px', fontSize: '1.2rem' }}>{project.name}</p>
-                        <p style={{ fontWeight: 300, marginBottom: '10px', fontSize: '0.8rem' }}>{project.tags}</p>
+                        <p style={{ marginBottom: '10px', fontSize: '1.2rem' }}>{project.name}</p>
+                        <p style={{ marginBottom: '10px', fontSize: '0.8rem' }}>{project.tags}</p>
                         <p>{project.description}</p>
                         {/* Links for github and website */}
                         <p className={classes.projectLinks}>
@@ -155,7 +155,7 @@ const projectsGrid = () => {
     }
 
     return (
-        <div className={classes.projectsOuter}>
+        <div className={classes.projectsOuter + ' ' + (props.lightMode && ' ' + classes.light)}>
             <div className={classes.subheading2}>
                 <hr></hr><p>PROJECTS ARCHIVE</p>
             </div>

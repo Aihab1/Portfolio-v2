@@ -84,11 +84,15 @@
 
 .outer.light .buttondiv button {
   color: black;
-  border: 2px solid #2b7a78;
+  border: 2px solid black;
 }
 
 .outer.light .buttondiv button svg {
-  fill: white;
+  fill: #3500d3;
+}
+
+.myName.light {
+  color: #3500d3;
 }
 
 .buttondiv button svg {

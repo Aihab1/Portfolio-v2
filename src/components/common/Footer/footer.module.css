@@ -9,6 +9,11 @@
     background: #090909;
 }
 
+.footerOuter.light {
+    background: #C6B2CB;
+    color: black;
+}
+
 .footerOuter h1 {
     font-size: 1.8rem;
     font-weight: 600;

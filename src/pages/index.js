@@ -23,7 +23,7 @@ export default function Home() {
         <About lightMode={lightMode}/>
         <FeaturedProjects lightMode={lightMode} toggleLightMode={lightModeToggleHandler}/>
         <Contact lightMode={lightMode}/>
-        <Footer />
+        <Footer lightMode={lightMode}/>
       </div>
     </div>
   )

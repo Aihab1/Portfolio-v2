@@ -6,6 +6,7 @@ import * as classes from './featuredProjects.module.css'
 const FeaturedProjects = (props) => {
     const [count, setCount] = useState(0)
     const [anim, setAnim] = useState(false)
+    const allProjectsURL = !props.lightMode ? '/projects' : '/projects?theme=light'
 
     const animHandler = () => {
         setAnim(true)
@@ -63,7 +64,7 @@ const FeaturedProjects = (props) => {
                         </div>
                     </div>
                 </div>
-                <Link to="/projects" state={{ lightMode: props.lightMode, toggleLightMode: props.toggleLightMode }} style={{textDecoration: 'underline'}}><p>View Complete Archive</p></Link>
+                <Link to={allProjectsURL} style={{textDecoration: 'underline'}}><p>View Complete Archive</p></Link>
             </div>
         </div>
     )

@@ -4,7 +4,7 @@ import Footer from '../components/common/Footer/footer'
 import ProjectsGrid from '../components/common/ProjectsGrid/projectsGrid'
 
 const Projects = (props) => {
-    const [lightMode, setLightMode] = useState(props.location.state.lightMode)
+    const [lightMode, setLightMode] = useState(props.location.search === '?theme=light')
 
     const lightModeToggleHandler = () => {
         setLightMode(!lightMode)
@@ -14,9 +14,9 @@ const Projects = (props) => {
         <div className={'outermost-index-div outermost-div' + ' ' + ( lightMode && ' ' + 'light')}>
             <Navbar lightMode={lightMode} toggleLightMode={lightModeToggleHandler} />
             <div className="projects-outer">
-                <ProjectsGrid />
+                <ProjectsGrid lightMode={lightMode}/>
             </div>
-            <Footer />
+            <Footer lightMode={lightMode}/>
         </div>
     )
 }
