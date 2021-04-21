@@ -2,9 +2,9 @@ import React from 'react'
 import backgroundImage from '../../../assets/images/portfolio-v2.jpg'
 import * as classes from './contact.module.css'
 
-const contact = () => {
+const contact = (props) => {
     return (
-        <div id="contact" className={classes.contactOuter}>
+        <div id="contact" className={classes.contactOuter + ' ' + (props.lightMode && ' ' + classes.light)}>
             <div className={classes.subheading2}>
                 <hr></hr><p>LET'S TALK</p>
             </div>

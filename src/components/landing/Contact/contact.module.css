@@ -56,6 +56,10 @@
   padding: 10px 0;
 }
 
+.contactOuter.light .contactBackground {
+  background-blend-mode: difference;
+}
+
 .device {
   position: absolute;
   left: 10%;

@@ -3,9 +3,9 @@ import Skill from '../../common/Skill/skill'
 import collegeImage from '../../../assets/images/iitbhu2.jpg'
 import * as classes from './about.module.css'
 
-const about = () => {
+const about = (props) => {
     return (
-        <div id="about" className={classes.outer}>
+        <div id="about" className={classes.outer  + ' ' + (props.lightMode && ' ' + classes.light)}>
             <div className={classes.about}>
                 <div className={classes.subheading}>
                     <p>ABOUT ME</p><hr></hr>
@@ -26,30 +26,30 @@ const about = () => {
                     </div>
                     <h1>Tools and Languages</h1>
                     <div className={classes.grid}>
-                        <Skill name="HTML" />
-                        <Skill name="CSS" />
-                        <Skill name="Sass" />
-                        <Skill name="Javascript" />
-                        <Skill name="React.js" />
-                        <Skill name="Express.js" />
-                        <Skill name="Node.js" />
-                        <Skill name="MongoDB" />
-                        <Skill name="Python" />
-                        <Skill name="Flask" />
-                        <Skill name="Django" />
-                        <Skill name="SQLite (+ORMs)" />
-                        <Skill name="C++" />
-                        <Skill name="Java" />
-                        <Skill name="Pygame" />
-                        <Skill name="Git" />
-                        <Skill name="Postman" />
-                        <Skill name="VSCode" />
+                        <Skill lightMode={props.lightMode} name="HTML" />
+                        <Skill lightMode={props.lightMode} name="CSS" />
+                        <Skill lightMode={props.lightMode} name="Sass" />
+                        <Skill lightMode={props.lightMode} name="Javascript" />
+                        <Skill lightMode={props.lightMode} name="React.js" />
+                        <Skill lightMode={props.lightMode} name="Express.js" />
+                        <Skill lightMode={props.lightMode} name="Node.js" />
+                        <Skill lightMode={props.lightMode} name="MongoDB" />
+                        <Skill lightMode={props.lightMode} name="Python" />
+                        <Skill lightMode={props.lightMode} name="Flask" />
+                        <Skill lightMode={props.lightMode} name="Django" />
+                        <Skill lightMode={props.lightMode} name="SQLite (+ORMs)" />
+                        <Skill lightMode={props.lightMode} name="C++" />
+                        <Skill lightMode={props.lightMode} name="Java" />
+                        <Skill lightMode={props.lightMode} name="Pygame" />
+                        <Skill lightMode={props.lightMode} name="Git" />
+                        <Skill lightMode={props.lightMode} name="Postman" />
+                        <Skill lightMode={props.lightMode} name="VSCode" />
                     </div>
                     <h1>Platforms</h1>
                     <div className={classes.grid}>
-                        <Skill name="Github" />
-                        <Skill name="Heroku" />
-                        <Skill name="Firebase" />
+                        <Skill lightMode={props.lightMode} name="Github" />
+                        <Skill lightMode={props.lightMode} name="Heroku" />
+                        <Skill lightMode={props.lightMode} name="Firebase" />
                     </div>
                     <div className={classes.background}></div>
                 </div>

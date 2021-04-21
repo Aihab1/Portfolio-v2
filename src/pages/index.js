@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Navbar from '../components/common/Navbar/navbar'
 import Footer from '../components/common/Footer/footer'
 import IntroDiv from '../components/landing/Intro/intro'
@@ -8,15 +8,21 @@ import FeaturedProjects from '../components/landing/FeaturedProjects/featuredPro
 import Contact from '../components/landing/Contact/contact'
 
 export default function Home() {
+  const [lightMode, setLightMode] = useState(false)
+
+  const lightModeToggleHandler = () => {
+    setLightMode(!lightMode)
+  }
+
   return (
-    <div className="outermost-index-div">
-      <Navbar />
+    <div className={'outermost-index-div' + ' ' + (lightMode && ' ' + 'light')}>
+      <Navbar lightMode={lightMode} toggleLightMode={lightModeToggleHandler}/>
       <IntroDiv />
       <div className="page-content">
-        <Description />
-        <About />
-        <FeaturedProjects />
-        <Contact />
+        <Description lightMode={lightMode} />
+        <About lightMode={lightMode}/>
+        <FeaturedProjects lightMode={lightMode} toggleLightMode={lightModeToggleHandler}/>
+        <Contact lightMode={lightMode}/>
         <Footer />
       </div>
     </div>

@@ -2,12 +2,12 @@ import React from 'react'
 import { Link } from 'gatsby'
 import * as classes from './description.module.css'
 
-const description = () => {
+const description = (props) => {
     return (
-        <div id="description" className={classes.outer}>
+        <div id="description" className={classes.outer + ' ' + (props.lightMode && ' ' + classes.light)}>
             <div className={classes.description}>
                 <p>Hi, my name is</p>
-                <h1>Aihab Umair.</h1>
+                <h1 style={{ color: 'white' }}>Aihab Umair.</h1>
                 <h1 style={{ marginTop: '-20px' }}>I develop websites that deliver.</h1>
                 <p>I am an engineering student at the Indian Institute of Technology (BHU), Varanasi. I like pretty much everything related to web development. Free? Let's build something together!</p>
 

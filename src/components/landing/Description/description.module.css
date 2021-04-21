@@ -11,7 +11,6 @@
   width: 100%;
   min-height: 100vh;
   padding: 85px 10%;
-  z-index: 2;
 }
 
 .description :nth-child(1) {
@@ -37,11 +36,13 @@
 
 .description h1 {
   font-size: 4rem;
+  z-index: 1;
 }
 
 .description p {
   width: 80%;
   margin-top: 20px;
+  z-index: 1;
 }
 
 .background {
@@ -52,27 +53,42 @@
   background: linear-gradient(to right,#000, #0c0032, #190061, #272471);
   width: 0;
   height: 100%;
-  z-index: -1;
+  z-index: 0;
   opacity: 0.8;
   animation: slide-in 1s ease-out forwards 4.3s;
+}
+
+.outer.light .background {
+  background: none;
 }
 
 .buttondiv {
   margin-top: 35px;
   position: relative;
+  z-index: 1;
 }
 
 .buttondiv button {
   padding: 5px 15px 5px 50px;
   border-radius: 25px;
   outline: none;
-  border: 2px solid rgba(255, 255, 255, 0.7);
+  border: 2px solid #3500d3;
   background: transparent;
   height: 40px;
   color: white;
   opacity: 0.8;
   font-size: 0.8rem;
   letter-spacing: 1px;
+  z-index: 1;
+}
+
+.outer.light .buttondiv button {
+  color: black;
+  border: 2px solid #2b7a78;
+}
+
+.outer.light .buttondiv button svg {
+  fill: white;
 }
 
 .buttondiv button svg {

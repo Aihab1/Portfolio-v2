@@ -14,6 +14,14 @@
     z-index: 50;
 }
 
+.navbar.light {
+    color: black;
+}
+
+.logo.light {
+    filter: invert(1);
+}
+
 .hamburger {
     position: absolute;
     top: 15px;
@@ -28,7 +36,7 @@
 }
 
 .links > div {
-    padding-left: 45px;
+    margin-left: 45px;
 }
 
 @keyframes appear {
@@ -76,14 +84,18 @@
         border-radius: 5px;
         box-shadow: 0 0 3px #090909;
     }
+
+    .navbar.light .hamburger div {
+        background: black;
+        box-shadow: none;
+    }
+
     .hamburger.open {
         position: fixed;
         right: 5%;
         top: 20px;
     }
-    .hamburger.open div {
-        background: white;
-    }
+
     .hamburger button :nth-child(1) {
         width: 40px;
     }
@@ -121,6 +133,10 @@
         clip-path: circle(30px at 100% 0);
         letter-spacing: 2px;
     }
+
+    .navbar.light .links {
+        background: white;
+    }
     .links.open {
         opacity: 1;
         position: fixed;
@@ -130,5 +146,6 @@
     }
     .links > div {
         padding: 5px 15px;
+        margin-left: 0;
     }
 }

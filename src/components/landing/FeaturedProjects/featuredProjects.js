@@ -3,7 +3,7 @@ import {Link} from 'gatsby'
 import projects from '../../common/ProjectDetails/projectDetails'
 import * as classes from './featuredProjects.module.css'
 
-const FeaturedProjects = () => {
+const FeaturedProjects = (props) => {
     const [count, setCount] = useState(0)
     const [anim, setAnim] = useState(false)
 
@@ -25,7 +25,7 @@ const FeaturedProjects = () => {
         }
     }
     return (
-        <div id="featuredProjects" className={classes.outer}>
+        <div id="featuredProjects" className={classes.outer + ' ' + (props.lightMode && ' ' + classes.light)}>
             <div className={classes.featuredProjects}>
                 <div className={classes.subheading}>
                     <p>FEATURED PROJECTS</p><hr></hr>
@@ -63,7 +63,7 @@ const FeaturedProjects = () => {
                         </div>
                     </div>
                 </div>
-                <Link to="/projects" style={{textDecoration: 'underline'}}><p>View Complete Archive</p></Link>
+                <Link to="/projects" state={{ lightMode: props.lightMode, toggleLightMode: props.toggleLightMode }} style={{textDecoration: 'underline'}}><p>View Complete Archive</p></Link>
             </div>
         </div>
     )
