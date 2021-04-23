@@ -175,3 +175,22 @@
     background: rgba(255, 255, 255, 0.1);
   }
 }
+
+@media screen and (max-width: 500px) {
+  .content h1 {
+    font-size: 2.5rem;
+  }
+  .content {
+    font-size: 0.9rem;
+    width: 100%;
+  }
+  .about p {
+    font-size: 0.9rem;
+  }
+  .subheading2 {
+    font-size: 0.9rem;
+  }
+  .skills h1 {
+    font-size: 1.8rem;
+  }
+}

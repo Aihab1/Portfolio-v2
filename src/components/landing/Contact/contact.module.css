@@ -28,6 +28,11 @@
   width: 100%;
 }
 
+.contactOuter.light .subheading2 p {
+  color: black;
+  font-weight: 400;
+}
+
 .subheading2 hr {
   display: inline-block;
   width: 70px;
@@ -198,5 +203,29 @@
   .contactBackground .backgroundImage {
     top: -10px;
     left: -25px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .subheading2 {
+    font-size: 0.9rem;
+  }
+  .contactOuter h1 {
+    font-size: 1.8rem;
+  }
+  .device {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .device {
+    left: 0;
+    transform: translateX(0);
+    width: 100%;
+  }
+  .logoContainer svg {
+    fill: white;
+    width: 37px;
   }
 }

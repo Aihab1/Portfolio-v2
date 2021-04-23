@@ -37,11 +37,12 @@
 .description h1 {
   font-size: 4rem;
   z-index: 1;
+  line-height: 4.1rem;
 }
 
 .description p {
   width: 80%;
-  margin-top: 20px;
+  margin: 20px 0;
   z-index: 1;
 }
 
@@ -59,11 +60,11 @@
 }
 
 .outer.light .background {
-  background: none;
+  background: linear-gradient(to left, #C6B2CB,#C6B2CB, #fff);
 }
 
 .buttondiv {
-  margin-top: 35px;
+  margin-top: 15px;
   position: relative;
   z-index: 1;
 }
@@ -127,8 +128,28 @@
 @media screen and (max-width: 1100px) {
   .description h1 {
     font-size: 3.3rem;
+    line-height: 3.4rem;
   }
   .description {
     padding: 85px 5%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .description h1 {
+    font-size: 2.5rem;
+    line-height: 2.6rem;
+  }
+  .description {
+    padding: 85px 5%;
+  }
+  .description p {
+    font-size: 0.9rem;
+  }
+  .buttondiv {
+    margin-top: 8px;
+  }
+  .buttondiv button {
+    font-size: 0.7rem;
   }
 }

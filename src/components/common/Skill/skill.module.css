@@ -41,3 +41,12 @@
         opacity: 0.9;
     }
 }
+
+@media screen and (max-width: 500px) {
+    .skill {
+        font-size: 0.9rem;
+        height: 85px;
+        min-width: 85px;
+        opacity: 1;
+    }
+}
