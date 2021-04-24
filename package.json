@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "portfolio-aihab",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "Hello-world gatsby starter turned into a fully working portfolio",
   "version": "0.1.0",
   "license": "0BSD",
   "scripts": {
@@ -15,8 +15,10 @@
   },
   "dependencies": {
     "gatsby": "^3.2.1",
+    "gatsby-plugin-react-helmet": "^4.3.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
+    "react-helmet": "^6.1.0",
     "react-transition-group": "^4.4.1"
   },
   "devDependencies": {

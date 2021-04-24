@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Helmet } from "react-helmet"
 import Navbar from '../components/common/Navbar/navbar'
 import Footer from '../components/common/Footer/footer'
 import IntroDiv from '../components/landing/Intro/intro'
@@ -16,6 +17,12 @@ export default function Home() {
 
   return (
     <div className={'outermost-index-div' + ' ' + (lightMode && ' ' + 'light')}>
+      <Helmet>
+        {!lightMode && <meta name="theme-color" content="#000" />}
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Aihab Umair</title>
+      </Helmet>
       <div className='smart-scroll'>
         <Navbar lightMode={lightMode} toggleLightMode={lightModeToggleHandler} />
       </div>
