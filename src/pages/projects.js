@@ -12,7 +12,9 @@ const Projects = (props) => {
 
     return (
         <div className={'outermost-index-div outermost-div' + ' ' + ( lightMode && ' ' + 'light')}>
-            <Navbar lightMode={lightMode} toggleLightMode={lightModeToggleHandler} />
+            <div className='smart-scroll'>
+                <Navbar lightMode={lightMode} toggleLightMode={lightModeToggleHandler} />
+            </div>
             <div className="projects-outer">
                 <ProjectsGrid lightMode={lightMode}/>
             </div>

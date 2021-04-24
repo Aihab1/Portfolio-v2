@@ -115,6 +115,45 @@ img {
   padding: 47.5px 0;
 }
 
+
+/* NAVBAR ANIM */
+.smart-scroll {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  /* overflow: hidden;*/
+  height: 66px;
+  z-index: 109;
+}
+
+.scrolled-down {
+  -webkit-transform: translateY(-110%);
+          transform: translateY(-110%);
+  background: transparent;
+}
+
+.scrolled-up {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  background: #090909;
+}
+
+.scrolled-down-permanent {
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  background: #090909;
+}
+
+.outermost-index-div.light .scrolled-up {
+  background: #C6B2CB;
+}
+
+.outermost-index-div.light .scrolled-down-permanent {
+  background: #C6B2CB;
+}
+
 /* @keyframes outro {
     to{
         overflow: auto;

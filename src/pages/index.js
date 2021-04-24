@@ -16,14 +16,16 @@ export default function Home() {
 
   return (
     <div className={'outermost-index-div' + ' ' + (lightMode && ' ' + 'light')}>
-      <Navbar lightMode={lightMode} toggleLightMode={lightModeToggleHandler}/>
+      <div className='smart-scroll'>
+        <Navbar lightMode={lightMode} toggleLightMode={lightModeToggleHandler} />
+      </div>
       <IntroDiv />
       <div className="page-content">
         <Description lightMode={lightMode} />
-        <About lightMode={lightMode}/>
-        <FeaturedProjects lightMode={lightMode} toggleLightMode={lightModeToggleHandler}/>
-        <Contact lightMode={lightMode}/>
-        <Footer lightMode={lightMode}/>
+        <About lightMode={lightMode} />
+        <FeaturedProjects lightMode={lightMode} toggleLightMode={lightModeToggleHandler} />
+        <Contact lightMode={lightMode} />
+        <Footer lightMode={lightMode} />
       </div>
     </div>
   )
