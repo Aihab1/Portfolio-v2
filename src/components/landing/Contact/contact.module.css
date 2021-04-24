@@ -60,9 +60,6 @@
   left: 0;
   transform: translateY(-50%);
   /* background: #190061; */
-  background: url('../../../assets/images/contactBackground.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
   padding: 10px 0;
 }
 

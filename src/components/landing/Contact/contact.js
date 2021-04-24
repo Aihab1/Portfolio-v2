@@ -1,5 +1,6 @@
 import React from 'react'
 import backgroundImage from '../../../assets/images/portfolio-v2.jpg'
+import contactBackground from '../../../assets/images/contactBackground.jpg'
 import * as classes from './contact.module.css'
 
 const contact = (props) => {
@@ -10,7 +11,7 @@ const contact = (props) => {
             </div>
             <h1>Contact me</h1>
             <div className={classes.contact}>
-                <div className={classes.contactBackground}>
+                <div className={classes.contactBackground} style={{ background: `url(${contactBackground})`, 'background-repeat': 'no-repeat', 'background-size': 'cover'}}>
                     <main>
                         <div className={classes.device}>
                             <section>
