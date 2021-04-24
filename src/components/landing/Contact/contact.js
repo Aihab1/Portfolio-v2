@@ -1,6 +1,6 @@
 import React from 'react'
 import backgroundImage from '../../../assets/images/portfolio-v2.jpg'
-import contactBackground from '../../../assets/images/contactBackground.jpg'
+import contactBackground from '../../../assets/images/contactbackground.jpg'
 import * as classes from './contact.module.css'
 
 const contact = (props) => {
