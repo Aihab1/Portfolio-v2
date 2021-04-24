@@ -34,6 +34,7 @@ const Navbar = (props) => {
     }, [])
 
     const [navbarOpen, setNavbarOpen] = useState(false)
+    const resumeURL = !props.lightMode ? '/resume' : '/resume?theme=light'
 
     useEffect(() => {
         if(navbarOpen) {
@@ -62,8 +63,8 @@ const Navbar = (props) => {
                 <div><Link to="/#about" onClick={navbarCloseHandler}>ABOUT</Link></div>
                 <div><Link to="/#featuredProjects" onClick={navbarCloseHandler}>PROJECTS</Link></div>
                 <div><Link to="/#contact" onClick={navbarCloseHandler}>CONTACT</Link></div>
-                <div onClick={navbarCloseHandler}>RESUME</div>
-                <div onClick={props.toggleLightMode}>{props.lightMode ? 'DARK MODE' : 'LIGHT MODE'}</div>
+                <div><Link to={resumeURL} onClick={navbarCloseHandler}>RESUME</Link></div>
+                <div style={{cursor: 'pointer'}} onClick={props.toggleLightMode}>{props.lightMode ? 'DARK MODE' : 'LIGHT MODE'}</div>
             </div>
             <div className={classes.hamburger + ' ' + (navbarOpen && ' ' + classes.open)}>
                 <button onClick={navbarToggleHandler}>

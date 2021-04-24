@@ -5,7 +5,7 @@ import * as classes from './about.module.css'
 
 const about = (props) => {
     return (
-        <div id="about" className={classes.outer  + ' ' + (props.lightMode && ' ' + classes.light)}>
+        <div id="about" className={classes.outer + ' ' + (props.lightMode && ' ' + classes.light)}>
             <div className={classes.about}>
                 <div className={classes.subheading}>
                     <p>ABOUT ME</p><hr></hr>
@@ -24,32 +24,37 @@ const about = (props) => {
                     <div className={classes.subheading2}>
                         <hr></hr><p>SKILLS & TECHNOLOGIES</p>
                     </div>
-                    <h1>Tools and Languages</h1>
+                    <h1>Programming Languages</h1>
                     <div className={classes.grid}>
+                        <Skill lightMode={props.lightMode} name="Javascript (ES6)" />
                         <Skill lightMode={props.lightMode} name="HTML" />
-                        <Skill lightMode={props.lightMode} name="CSS" />
-                        <Skill lightMode={props.lightMode} name="Sass" />
-                        <Skill lightMode={props.lightMode} name="Javascript" />
-                        <Skill lightMode={props.lightMode} name="React.js" />
-                        <Skill lightMode={props.lightMode} name="Express.js" />
-                        <Skill lightMode={props.lightMode} name="Node.js" />
-                        <Skill lightMode={props.lightMode} name="MongoDB" />
-                        <Skill lightMode={props.lightMode} name="Python" />
-                        <Skill lightMode={props.lightMode} name="Flask" />
-                        <Skill lightMode={props.lightMode} name="Django" />
-                        <Skill lightMode={props.lightMode} name="SQLite (+ORMs)" />
+                        <Skill lightMode={props.lightMode} name="CSS/Sass" />
                         <Skill lightMode={props.lightMode} name="C++" />
                         <Skill lightMode={props.lightMode} name="Java" />
-                        <Skill lightMode={props.lightMode} name="Pygame" />
-                        <Skill lightMode={props.lightMode} name="Git" />
-                        <Skill lightMode={props.lightMode} name="Postman" />
-                        <Skill lightMode={props.lightMode} name="VSCode" />
+                        <Skill lightMode={props.lightMode} name="Python" />
+                        <Skill lightMode={props.lightMode} name="SQL (ORMs)" />
                     </div>
-                    <h1>Platforms</h1>
+                    <h1>Libraries & Frameworks</h1>
                     <div className={classes.grid}>
+                        <Skill lightMode={props.lightMode} name="jQuery" />
+                        <Skill lightMode={props.lightMode} name="React" />
+                        <Skill lightMode={props.lightMode} name="Gatsby" />
+                        <Skill lightMode={props.lightMode} name="Node.js" />
+                        <Skill lightMode={props.lightMode} name="Express" />
+                        <Skill lightMode={props.lightMode} name="MongoDB" />
+                        <Skill lightMode={props.lightMode} name="Flask" />
+                        <Skill lightMode={props.lightMode} name="Django" />
+                        <Skill lightMode={props.lightMode} name="Pygame" />
+                    </div>
+                    <h1>Tools & Platforms</h1>
+                    <div className={classes.grid}>
+                        <Skill lightMode={props.lightMode} name="Git" />
                         <Skill lightMode={props.lightMode} name="Github" />
                         <Skill lightMode={props.lightMode} name="Heroku" />
+                        <Skill lightMode={props.lightMode} name="Netlify" />
                         <Skill lightMode={props.lightMode} name="Firebase" />
+                        <Skill lightMode={props.lightMode} name="Postman" />
+                        <Skill lightMode={props.lightMode} name="VSCode" />
                     </div>
                     <div className={classes.background}></div>
                 </div>

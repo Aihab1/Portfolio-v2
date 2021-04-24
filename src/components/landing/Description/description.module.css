@@ -100,16 +100,16 @@
   position: absolute;
   left: 10px;
   top: 50%;
-  transform: translateY(-50%) rotate(90deg);
   -ms-transform: translateY(-50%) rotate(90deg);
   -webkit-transform: translateY(-50%) rotate(90deg);
+  transform: translateY(-50%) rotate(90deg);
   transition: all 1s ease !important;
 }
 
 .buttondiv button:hover > svg {
-  transform: translateY(-50%) rotate(450deg);
   -ms-transform: translateY(-50%) rotate(450deg);
   -webkit-transform: translateY(-50%) rotate(450deg);
+  transform: translateY(-50%) rotate(450deg);
 }
 
 @keyframes appear {

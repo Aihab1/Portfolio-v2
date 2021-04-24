@@ -24,6 +24,10 @@
     margin-top: 10px;
 }
 
+.footerOuter a {
+    width: max-content;
+}
+
 @media screen and (max-width: 1100px) {
     .footerOuter {
         padding: 50px 5%;
