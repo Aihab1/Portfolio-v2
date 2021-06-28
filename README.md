@@ -79,12 +79,12 @@ A quick look at the directories you'll see in this project.
     │   │   │   ├── ProjectDetails
     │   │   │   ├── ProjectsGrid
     │   │   │   └── Skill
-    │   │   ├── landing
-    │   │   │   ├── About
-    │   │   │   ├── Contact
-    │   │   │   ├── Description
-    │   │   │   ├── FeaturedProjects
-    │   │   │   └── Intro
+    │   │   └── landing
+    │   │       ├── About
+    │   │       ├── Contact
+    │   │       ├── Description
+    │   │       ├── FeaturedProjects
+    │   │       └── Intro
     │   ├── pages
     │   └── styles
     ├── static
