@@ -1,15 +1,15 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { Helmet } from "react-helmet"
+
+import { useStateValue } from '../contextapi/StateProvider'
+
 import Navbar from '../components/common/Navbar/navbar'
 import Footer from '../components/common/Footer/footer'
 import ProjectsGrid from '../components/common/ProjectsGrid/projectsGrid'
 
-const Projects = (props) => {
-    const [lightMode, setLightMode] = useState(props.location.search === '?theme=light')
-
-    const lightModeToggleHandler = () => {
-        setLightMode(!lightMode)
-    }
+const Projects = () => {
+    //const [lightMode, setLightMode] = useState(props.location.search === '?theme=light')
+    const [{ lightMode }, dispatch] = useStateValue();
 
     return (
         <div className={'outermost-index-div outermost-div' + ' ' + (lightMode && ' ' + 'light')}>
@@ -20,12 +20,12 @@ const Projects = (props) => {
                 <title>All Projects</title>
             </Helmet>
             <div className='smart-scroll'>
-                <Navbar lightMode={lightMode} toggleLightMode={lightModeToggleHandler} />
+                <Navbar />
             </div>
             <div className="projects-outer">
-                <ProjectsGrid lightMode={lightMode} />
+                <ProjectsGrid />
             </div>
-            <Footer lightMode={lightMode} />
+            <Footer />
         </div>
     )
 }

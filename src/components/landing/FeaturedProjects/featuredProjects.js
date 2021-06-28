@@ -1,12 +1,16 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
+
+import { useStateValue } from '../../../contextapi/StateProvider'
+
 import projects from '../../common/ProjectDetails/projectDetails'
 import * as classes from './featuredProjects.module.css'
 
-const FeaturedProjects = (props) => {
+const FeaturedProjects = () => {
     const [count, setCount] = useState(0)
     const [anim, setAnim] = useState(false)
-    const allProjectsURL = !props.lightMode ? '/projects' : '/projects?theme=light'
+    const [{ lightMode }, dispatch] = useStateValue();
+    //const allProjectsURL = !props.lightMode ? '/projects' : '/projects?theme=light'
 
     const animHandler = () => {
         setAnim(true)
@@ -26,7 +30,7 @@ const FeaturedProjects = (props) => {
         }
     }
     return (
-        <div id="featuredProjects" className={classes.outer + ' ' + (props.lightMode && ' ' + classes.light)}>
+        <div id="featuredProjects" className={classes.outer + ' ' + (lightMode && ' ' + classes.light)}>
             <div className={classes.featuredProjects}>
                 <div className={classes.subheading}>
                     <p>FEATURED PROJECTS</p><hr></hr>
@@ -68,7 +72,7 @@ const FeaturedProjects = (props) => {
                         </div>
                     </div>
                 </div>
-                <Link to={allProjectsURL} style={{ textDecoration: 'underline' }}><p>View Complete Archive</p></Link>
+                <Link to='/projects' style={{ textDecoration: 'underline' }}><p>View Complete Archive</p></Link>
             </div>
         </div>
     )

@@ -1,4 +1,6 @@
 import React from 'react'
+import { useStateValue } from '../../../contextapi/StateProvider'
+
 import * as classes from './projectsGrid.module.css'
 
 import portfolio2Image from '../../../assets/images/portfolio-v2.jpg'
@@ -18,8 +20,17 @@ import taskManagerApiImage from '../../../assets/images/taskmanagerapi.jpg'
 import tributePageImage from '../../../assets/images/tributepage.jpg'
 import weatherAppImage from '../../../assets/images/weatherapp.jpg'
 import xMemeImage from '../../../assets/images/xmeme-mini.jpg'
+import alanaiImage from '../../../assets/images/alanai.png'
 
 const allProjects = [{
+    name: 'Virtual Assistant Webapp',
+    imageSrc: alanaiImage,
+    tags: 'REACT.JS | PUBLIC APIs | ALAN AI',
+    description: 'A multipurpose website built with React and integrated with Alan AI (Virtual Assistant). It allows users to perform specific tasks using voice commands. With the power of Alan AI API and 5+ other APIs, one can search for news, get solutions to basic math queries, search for bitcoin price fluctuations, get weather forecasts and more.',
+    time: 'June 2021',
+    github: 'https://github.com/Aihab1/Virtual-Assistant-Webapp',
+    link: 'https://yourdonna.herokuapp.com/'
+}, {
     name: 'Portfolio v2',
     imageSrc: portfolio2Image,
     tags: 'GATSBY | REACT.JS | CSS',
@@ -147,7 +158,8 @@ const allProjects = [{
     link: 'https://codepen.io/aihab-umair/full/PoPYEJw'
 }]
 
-const projectsGrid = (props) => {
+const ProjectsGrid = () => {
+    const [{ lightMode }, dispatch] = useStateValue();
     const all = []
     for (let project of allProjects) {
         all.push(
@@ -188,7 +200,7 @@ const projectsGrid = (props) => {
     }
 
     return (
-        <div className={classes.projectsOuter + ' ' + (props.lightMode && ' ' + classes.light)}>
+        <div className={classes.projectsOuter + ' ' + (lightMode && ' ' + classes.light)}>
             <div className={classes.subheading2}>
                 <hr></hr><p>PROJECTS ARCHIVE</p>
             </div>
@@ -200,4 +212,4 @@ const projectsGrid = (props) => {
     )
 }
 
-export default projectsGrid
+export default ProjectsGrid

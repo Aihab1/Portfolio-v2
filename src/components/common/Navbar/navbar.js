@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from 'gatsby'
+
+import { useStateValue } from '../../../contextapi/StateProvider'
+
 import Logo from '../Logo/logo'
 import * as classes from './navbar.module.css'
 
-const Navbar = (props) => {
+const Navbar = () => {
     useEffect(() => {
         var last_scroll_top = 0;
         var scroll_top = 0;
@@ -34,10 +37,17 @@ const Navbar = (props) => {
     }, [])
 
     const [navbarOpen, setNavbarOpen] = useState(false)
-    const resumeURL = !props.lightMode ? '/resume' : '/resume?theme=light'
+    const [{ lightMode }, dispatch] = useStateValue();
+    //const resumeURL = !props.lightMode ? '/resume' : '/resume?theme=light'
+
+    const toggleLightMode = () => {
+        dispatch({
+            type: 'TOGGLE_THEME'
+        })
+    }
 
     useEffect(() => {
-        if(navbarOpen) {
+        if (navbarOpen) {
             document.querySelector('.smart-scroll').classList.add('scrolled-down-permanent');
         } else {
             document.querySelector('.smart-scroll').classList.remove('scrolled-down-permanent')
@@ -53,9 +63,9 @@ const Navbar = (props) => {
     }
 
     return (
-        <div className={classes.navbar + ' ' + (props.lightMode && ' ' + classes.light)}>
+        <div className={classes.navbar + ' ' + (lightMode && ' ' + classes.light)}>
             <Link to="/">
-                <div className={classes.logo + ' ' + (props.lightMode && ' ' + classes.light)}>
+                <div className={classes.logo + ' ' + (lightMode && ' ' + classes.light)}>
                     <Logo />
                 </div>
             </Link>
@@ -63,8 +73,8 @@ const Navbar = (props) => {
                 <div><Link to="/#about" onClick={navbarCloseHandler}>ABOUT</Link></div>
                 <div><Link to="/#featuredProjects" onClick={navbarCloseHandler}>PROJECTS</Link></div>
                 <div><Link to="/#contact" onClick={navbarCloseHandler}>CONTACT</Link></div>
-                <div><Link to={resumeURL} onClick={navbarCloseHandler}>RESUME</Link></div>
-                <div style={{cursor: 'pointer'}} onClick={props.toggleLightMode}>{props.lightMode ? 'DARK MODE' : 'LIGHT MODE'}</div>
+                <div><Link to='/resume' onClick={navbarCloseHandler}>RESUME</Link></div>
+                <div style={{ cursor: 'pointer' }} onClick={toggleLightMode}>{lightMode ? 'DARK MODE' : 'LIGHT MODE'}</div>
             </div>
             <div className={classes.hamburger + ' ' + (navbarOpen && ' ' + classes.open)}>
                 <button onClick={navbarToggleHandler}>

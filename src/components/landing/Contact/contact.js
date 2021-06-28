@@ -1,11 +1,14 @@
 import React from 'react'
+import { useStateValue } from '../../../contextapi/StateProvider'
+
 import backgroundImage from '../../../assets/images/portfolio-v2.jpg'
 import contactBackground from '../../../assets/images/contactbackground.jpg'
 import * as classes from './contact.module.css'
 
-const contact = (props) => {
+const Contact = () => {
+    const [{ lightMode }, dispatch] = useStateValue();
     return (
-        <div id="contact" className={classes.contactOuter + ' ' + (props.lightMode && ' ' + classes.light)}>
+        <div id="contact" className={classes.contactOuter + ' ' + (lightMode && ' ' + classes.light)}>
             <div className={classes.subheading2}>
                 <hr></hr><p>LET'S TALK</p>
             </div>
@@ -61,4 +64,4 @@ const contact = (props) => {
     )
 }
 
-export default contact
+export default Contact

@@ -20,6 +20,10 @@ Purple/Blue - #371BB1
     z-index: 1000;
 }
 
+.introdiv.light {
+    background: white;
+}
+
 .logocontainer {
     animation: outro 0.5s ease-out forwards 3s;
     fill: #371BB1;

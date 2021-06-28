@@ -118,6 +118,7 @@
   font-weight: bold;
   outline: none;
   border: none;
+  cursor: pointer;
 }
 
 .outer.light .projectButton {
@@ -134,13 +135,14 @@
   padding: 5px 15px 5px 50px;
   border-radius: 25px;
   outline: none;
-  border: 2px solid rgba(255, 255, 255, 0.7);
+  border: 2px solid #3500d3;
   background: transparent;
   height: 40px;
   color: white;
   font-size: 0.8rem;
   letter-spacing: 1px;
   position: relative;
+  cursor: pointer;
 }
 
 .outer.light .buttondiv button {
