@@ -41,6 +41,8 @@ const Navbar = () => {
     //const resumeURL = !props.lightMode ? '/resume' : '/resume?theme=light'
 
     const toggleLightMode = () => {
+        let mode = lightMode === true ? 'dark' : 'light';
+        window.localStorage.setItem('theme', mode);
         dispatch({
             type: 'TOGGLE_THEME'
         })

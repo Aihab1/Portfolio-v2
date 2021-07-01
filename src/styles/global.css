@@ -49,10 +49,9 @@ hr {
 
 /* scrollbar itself */
 ::-webkit-scrollbar-thumb {
-  background-color: #a8b2d1;
+  background-color: #7e859c;
   border: 2px solid white;
   border-radius: 5px;
-  padding: 0 4px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -136,21 +135,25 @@ img {
 .scrolled-up {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  background: #090909;
+  background: rgba(9, 9, 9, 0.5);
+  backdrop-filter: blur(10px);
 }
 
 .scrolled-down-permanent {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  background: #090909;
+          background: rgba(9, 9, 9, 0.5);
+          backdrop-filter: blur(10px);
 }
 
 .outermost-index-div.light .scrolled-up {
-  background: #C6B2CB;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
 }
 
 .outermost-index-div.light .scrolled-down-permanent {
-  background: #C6B2CB;
+  background: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
 }
 
 /* @keyframes outro {

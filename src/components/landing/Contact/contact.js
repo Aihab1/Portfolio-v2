@@ -14,7 +14,7 @@ const Contact = () => {
             </div>
             <h1>Contact me</h1>
             <div className={classes.contact}>
-                <div className={classes.contactBackground} style={{ background: `url(${contactBackground})`, 'background-repeat': 'no-repeat', 'background-size': 'cover'}}>
+                <div className={classes.contactBackground} style={{ background: `url(${contactBackground})`, 'backgroundRepeat': 'no-repeat', 'backgroundSize': 'cover'}}>
                     <main>
                         <div className={classes.device}>
                             <section>

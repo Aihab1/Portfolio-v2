@@ -3,13 +3,25 @@ export const initialState = {
 }
 
 const reducer = (state, action) => {
-    switch(action.type) {
+    switch (action.type) {
         case 'TOGGLE_THEME':
             return {
                 ...state,
                 lightMode: !state.lightMode
             }
-        
+
+        case 'LIGHT_THEME':
+            return {
+                ...state,
+                lightMode: true
+            }
+
+        case 'DARK_THEME':
+            return {
+                ...state,
+                lightMode: false
+            }
+
         default:
             return state
     }
