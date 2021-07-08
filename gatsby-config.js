@@ -1,3 +1,4 @@
+
 /**
  * Configure your Gatsby site with this file.
  *
@@ -6,5 +7,17 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [`gatsby-plugin-react-helmet`],
+  siteMetadata: {
+    siteUrl: `https://aihabumair.gatsbyjs.io`,
+  },
+  plugins: [`gatsby-plugin-react-helmet`, 
+            `gatsby-plugin-sitemap`,
+            {
+              resolve: 'gatsby-plugin-robots-txt',
+              options: {
+                host: 'https://aihabumair.gatsbyjs.io',
+                sitemap: 'https://aihabumair.gatsbyjs.io/sitemap.xml',
+                policy: [{ userAgent: '*', allow: '/' }]
+              }
+            }],
 }

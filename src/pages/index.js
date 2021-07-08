@@ -43,6 +43,7 @@ export default function Home() {
         {!lightMode && <meta name="theme-color" content="#000" />}
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="The Home Page of Aihab Umair's personal portfolio website."/>
         <title>Aihab Umair</title>
       </Helmet>
       <div className='smart-scroll'>
