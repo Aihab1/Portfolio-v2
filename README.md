@@ -10,7 +10,7 @@
 <p align="center">The third iteration (v2) of my personal portfolio <a href="https://aihabumair.gatsbyjs.io">website</a> built with <a href="https://www.gatsbyjs.com/">Gatsby</a>.</p>
 
 <p align="center">
-  <img src="https://user-images.githubusercontent.com/55903466/115990098-21e6dc80-a5df-11eb-8ff3-3a281881f1df.png" alt="website-preview">
+  <img src="https://user-images.githubusercontent.com/55903466/125199588-7e73a280-e284-11eb-84c3-96caa804edbd.png" alt="website-preview">
 <p>
 
 ## 🚨 Information
