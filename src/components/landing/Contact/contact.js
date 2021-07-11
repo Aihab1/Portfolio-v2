@@ -21,8 +21,8 @@ const Contact = () => {
                                 <img className={classes.backgroundImage} src={backgroundImage} alt="contact background"></img>
                                 <p style={{ marginTop: '30px', color: '#090909', fontWeight: '400' }}>In case you wanted to say hi</p>
                                 <div className={classes.contactInner}>
-                                    <a href="mailto:aihab.umair.che19@itbhu.ac.in">
-                                        <p>aihab.umair.che19@itbhu.ac.in</p>
+                                    <a href="mailto:aihabumair07@gmail.com">
+                                        <p>aihabumair07@gmail.com</p>
                                     </a>
 
                                     <ul className={classes.logoContainer}>

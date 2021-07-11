@@ -5,6 +5,7 @@ import { useStateValue } from '../../../contextapi/StateProvider'
 
 import Logo from '../Logo/logo'
 import * as classes from './navbar.module.css'
+import resumeLink from '../../../assets/documents/resume.pdf'
 
 const Navbar = () => {
     useEffect(() => {
@@ -75,7 +76,7 @@ const Navbar = () => {
                 <div><Link to="/#about" onClick={navbarCloseHandler}>ABOUT</Link></div>
                 <div><Link to="/#featuredProjects" onClick={navbarCloseHandler}>PROJECTS</Link></div>
                 <div><Link to="/#contact" onClick={navbarCloseHandler}>CONTACT</Link></div>
-                <div><Link to='/resume' onClick={navbarCloseHandler}>RESUME</Link></div>
+                <div><a href={resumeLink} target="_blank" onClick={navbarCloseHandler}>RESUME</a></div>
                 <div style={{ cursor: 'pointer' }} onClick={toggleLightMode}>{lightMode ? 'DARK MODE' : 'LIGHT MODE'}</div>
             </div>
             <div className={classes.hamburger + ' ' + (navbarOpen && ' ' + classes.open)}>
