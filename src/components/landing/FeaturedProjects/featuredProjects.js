@@ -19,7 +19,7 @@ const FeaturedProjects = () => {
         }, 250)
         setTimeout(() => {
             setAnim(false)
-        }, 500)
+        }, 1000)
     }
 
     const projectChangeHandler = () => {

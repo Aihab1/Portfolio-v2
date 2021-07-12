@@ -135,14 +135,14 @@ img {
 .scrolled-up {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-  background: rgba(9, 9, 9, 0.8);
-  /* backdrop-filter: blur(10px); */
+  background: rgba(9, 9, 9, 0.95);
+  /* backdrop-filter: blur(15px); */
 }
 
 .scrolled-down-permanent {
   -webkit-transform: translateY(0);
           transform: translateY(0);
-          background: rgba(9, 9, 9, 0.8);
+          background: rgba(9, 9, 9, 0.95);
           /* backdrop-filter: blur(10px); */
 }
 

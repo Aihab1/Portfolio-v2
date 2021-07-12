@@ -67,17 +67,17 @@ const Navbar = () => {
 
     return (
         <div className={classes.navbar + ' ' + (lightMode && ' ' + classes.light)}>
-            <Link to="/">
+            <Link to="/" className={classes.link}>
                 <div className={classes.logo + ' ' + (lightMode && ' ' + classes.light)}>
                     <Logo />
                 </div>
             </Link>
             <div className={classes.links + ' ' + (navbarOpen && ' ' + classes.open)}>
-                <div><Link to="/#about" onClick={navbarCloseHandler}>ABOUT</Link></div>
-                <div><Link to="/#featuredProjects" onClick={navbarCloseHandler}>PROJECTS</Link></div>
-                <div><Link to="/#contact" onClick={navbarCloseHandler}>CONTACT</Link></div>
-                <div><a href={resumeLink} target="_blank" onClick={navbarCloseHandler}>RESUME</a></div>
-                <div style={{ cursor: 'pointer' }} onClick={toggleLightMode}>{lightMode ? 'DARK MODE' : 'LIGHT MODE'}</div>
+                <div><Link to="/#about" onClick={navbarCloseHandler} className={classes.link}>ABOUT</Link></div>
+                <div><Link to="/#featuredProjects" onClick={navbarCloseHandler} className={classes.link}>PROJECTS</Link></div>
+                <div><Link to="/#contact" onClick={navbarCloseHandler} className={classes.link}>CONTACT</Link></div>
+                <div style={{ cursor: 'pointer' }} onClick={toggleLightMode} className={classes.link}>{lightMode ? 'DARK MODE' : 'LIGHT MODE'}</div>
+                <div><a href={resumeLink} target="_blank" onClick={navbarCloseHandler} className={classes.resumeButton}>RESUME</a></div>
             </div>
             <div className={classes.hamburger + ' ' + (navbarOpen && ' ' + classes.open)}>
                 <button onClick={navbarToggleHandler}>
