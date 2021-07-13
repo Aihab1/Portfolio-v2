@@ -22,7 +22,7 @@ import weatherAppImage from '../../../assets/images/weatherapp.jpg'
 import xMemeImage from '../../../assets/images/xmeme-mini.jpg'
 import alanaiImage from '../../../assets/images/alanai.png'
 
-const allProjects = [{
+export const allProjects = [{
     name: 'Virtual Assistant Webapp',
     imageSrc: alanaiImage,
     tags: 'REACT.JS | PUBLIC APIs | ALAN AI',
@@ -38,20 +38,20 @@ const allProjects = [{
     time: 'April 2021',
     github: 'https://github.com/Aihab1/Portfolio-v2'
 }, {
-    name: 'Blog Website',
-    imageSrc: blogImage,
-    tags: 'DJANGO | PYTHON | SASS',
-    description: 'Built a blog website template which helps users to write personal blogs. The blogs can be accessed by the general public and anyone can add comments which are then approved/rejected by the owner. The website supports images, links, text styling, emoticons etc. It is built on django and has made use of html, (s)css and javascript.',
-    time: 'September 2020',
-    github: 'https://github.com/Aihab1/Blog-Website',
-    link: 'https://aihablog.herokuapp.com/'
-}, {
     name: 'Task Manager API',
     imageSrc: taskManagerApiImage,
     tags: 'NODE.JS | EXPRESS.JS | MONGODB',
     description: 'A classic task manager API (RESTful) which enables users to create an account, store tasks in the database, perform CRUD operations etc. all while making a few HTTP requests. The API uses JWT web tokens for logging in and out and is built with the help of node.js together with express.js, mongodb and mongoose models. Documentation of the API is yet to be done.',
     time: 'March 2021',
     github: 'https://github.com/Aihab1/Task-Manager-API'
+}, {
+    name: 'Burger Builder',
+    imageSrc: burgerBuilderImage,
+    tags: 'REACT.JS | REDUX | FIREBASE',
+    description: 'This was not an independent project but a course project under Maximilian Schwarzmüller, the instructor of the course: React - The Complete Guide(incl Hooks, React Router, Redux). It allows a user to build a burger using a very nicely built UI. The web application supports authentication and handles order details using firebase cloud database.',
+    time: 'March 2021',
+    github: 'https://github.com/Aihab1/Burger-Builder',
+    link: 'https://react-burger-builder-80d1a.firebaseapp.com/'
 }, {
     name: 'Meme Sharing Website & API',
     imageSrc: xMemeImage,
@@ -60,6 +60,22 @@ const allProjects = [{
     time: 'February 2021',
     github: 'https://github.com/Aihab1/xMeme',
     link: 'https://x-meme.herokuapp.com/'
+}, {
+    name: 'Blog Website',
+    imageSrc: blogImage,
+    tags: 'DJANGO | PYTHON | SASS',
+    description: 'Built a blog website template which helps users to write personal blogs. The blogs can be accessed by the general public and anyone can add comments which are then approved/rejected by the owner. The website supports images, links, text styling, emoticons etc. It is built on django and has made use of html, (s)css and javascript.',
+    time: 'September 2020',
+    github: 'https://github.com/Aihab1/Blog-Website',
+    link: 'https://aihablog.herokuapp.com/'
+}, {
+    name: 'Messaging Web App',
+    imageSrc: derschnackImage,
+    tags: 'SOCKET.IO | JAVASCRIPT | SASS | FLASK',
+    description: 'Developed a real-time chat web application named \'derschnack\' which, in German, means \'to chat\'. It helps users to chat in a slack-like environment by creating public and private chat rooms. The application requires only a username to start chatting and it can be changed anytime. The web application uses only the basics of socket-io, flask and javascript.',
+    time: 'August 2020',
+    github: 'https://github.com/Aihab1/Schnack',
+    link: 'https://derschnack.herokuapp.com/'
 }, {
     name: 'Portfolio v1',
     imageSrc: portfolio1Image,
@@ -76,15 +92,7 @@ const allProjects = [{
     time: 'July 2020',
     github: 'https://github.com/Aihab1/Peekaabook',
     link: 'https://peek-aa-book.herokuapp.com/'
-}, {
-    name: 'Messaging Web App',
-    imageSrc: derschnackImage,
-    tags: 'SOCKET.IO | JAVASCRIPT | SASS | FLASK',
-    description: 'Developed a real-time chat web application named \'derschnack\' which, in German, means \'to chat\'. It helps users to chat in a slack-like environment by creating public and private chat rooms. The application requires only a username to start chatting and it can be changed anytime. The web application uses only the basics of socket-io, flask and javascript.',
-    time: 'July 2020',
-    github: 'https://github.com/Aihab1/Schnack',
-    link: 'https://derschnack.herokuapp.com/'
-}, {
+},  {
     name: 'Sudoku Solver',
     imageSrc: sudokuSolverImage,
     tags: 'PYTHON | PYGAME | BACKTRACKING',
@@ -92,19 +100,11 @@ const allProjects = [{
     time: 'May 2020',
     github: 'https://github.com/Aihab1/Sudoku-Solver'
 }, {
-    name: 'Burger Builder',
-    imageSrc: burgerBuilderImage,
-    tags: 'REACT.JS | REDUX | FIREBASE',
-    description: 'This was not an independent project but a course project under Maximilian Schwarzmüller, the instructor of the course: React - The Complete Guide(incl Hooks, React Router, Redux). It allows a user to build a burger using a very nicely built UI. The web application supports authentication and handles order details using firebase cloud database.',
-    time: 'March 2021',
-    github: 'https://github.com/Aihab1/Burger-Builder',
-    link: 'https://react-burger-builder-80d1a.firebaseapp.com/'
-}, {
     name: 'Weather App',
     imageSrc: weatherAppImage,
     tags: 'NODE.JS | WEATHERSTACK API',
     description: 'This is a basic weather checking web application which makes use of the weatherstack api to convert coordinates into actual weather. The weather is then displayed on the screen. The website is hosted on heroku and the source code of the project is available on my github.',
-    time: 'May 2021',
+    time: 'May 2020',
     link: 'https://raindear.herokuapp.com/'
 }, {
     name: 'Promotional Web Page',

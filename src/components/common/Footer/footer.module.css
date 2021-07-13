@@ -1,5 +1,5 @@
 .footerOuter {
-    padding: 50px 10%;
+    padding: 30px 10%;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -7,6 +7,7 @@
     color: white;
     margin: 47.5px 0 0 0;
     background: #090909;
+    position: relative;
 }
 
 .footerOuter.light {

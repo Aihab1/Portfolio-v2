@@ -116,12 +116,16 @@
   min-width: 100%;
   min-height: 400px;
   opacity: 0.9;
-  filter: invert(1);
+  filter: opacity(0.8) invert(1);
   pointer-events: all;
   z-index: -1;
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.light .backgroundImage {
+  filter: invert(1);
 }
 
 .contactInner {
