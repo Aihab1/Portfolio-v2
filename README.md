@@ -9,15 +9,13 @@
 
 <p align="center">The third iteration (v2) of my personal portfolio <a href="https://aihabumair.gatsbyjs.io">website</a> built with <a href="https://www.gatsbyjs.com/">Gatsby</a>.</p>
 
-<div align="center">
+<p align="center">
   <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" />
   <img src="https://img.shields.io/badge/Gatsby-663399?style=for-the-badge&logo=gatsby&logoColor=white" />
   <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" />
   <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white" />
   <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white" />
-</div>
-
-<br></br>
+</p>
 
 <p align="center">
   <img src="https://user-images.githubusercontent.com/55903466/125199588-7e73a280-e284-11eb-84c3-96caa804edbd.png" alt="website-preview">
