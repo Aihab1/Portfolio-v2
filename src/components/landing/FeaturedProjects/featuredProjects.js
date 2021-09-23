@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 
 import { useStateValue } from '../../../contextapi/StateProvider'
 
-import projects from '../../common/ProjectDetails/projectDetails'
+import projects from '../../common/FeaturedProjectsDetails/FeaturedProjectsDetails'
 import { allProjects } from '../../common/ProjectsGrid/projectsGrid'
 import * as classes from './featuredProjects.module.css'
 
@@ -13,12 +13,11 @@ const FeaturedProjects = () => {
     const [allDisplayProjects, setAllDisplayProjects] = useState([]);
     const [displayProjects, setDisplayProjects] = useState([]);
     const [{ lightMode }, dispatch] = useStateValue();
-    //const allProjectsURL = !props.lightMode ? '/projects' : '/projects?theme=light'
 
     useEffect(() => {
         const all = []
         for (let i = 0; i < allProjects.length; i++) {
-            if(allProjects[i].name === 'Portfolio v2' || allProjects[i].name === 'Book Review Website' || allProjects[i].name === 'Messaging Web App' || allProjects[i].name === 'Meme Sharing Website & API') {
+            if(allProjects[i].name === 'Portfolio v2' || allProjects[i].name === 'Book Review Website' || allProjects[i].name === 'Messaging Web App' || allProjects[i].name === 'Meme Sharing Website & API' || allProjects[i].name === 'Football-themed Social Media Webapp') {
                 continue;
             }
             all.push(
@@ -76,7 +75,7 @@ const FeaturedProjects = () => {
     }
 
     const projectChangeHandler = () => {
-        if (count === 2) {
+        if (count === projects.length-1) {
             setCount(0)
         } else {
             setCount(count + 1)

@@ -21,8 +21,17 @@ import tributePageImage from '../../../assets/images/tributepage.jpg'
 import weatherAppImage from '../../../assets/images/weatherapp.jpg'
 import xMemeImage from '../../../assets/images/xmeme-mini.jpg'
 import alanaiImage from '../../../assets/images/alanai.png'
+import footballDimesMini from '../../../assets/images/footballdimes-mini.png'
 
 export const allProjects = [{
+    name: 'Football-themed Social Media Webapp',
+    imageSrc: footballDimesMini,
+    tags: 'REACT.JS | REDUX | MONGODB | NODE.JS | EXPRESS.JS',
+    description: 'Football Dimes is a football-themed social media web application built upon the MERN stack. It allows users to post about their favourite football players, like posts made by other users, get player-specific news, and create sections for discussing players, leagues, and clubs.',
+    time: 'September 2021',
+    github: 'https://github.com/Aihab1/Football-Dimes',
+    link: 'https://football-dimes.herokuapp.com/'
+}, {
     name: 'Virtual Assistant Webapp',
     imageSrc: alanaiImage,
     tags: 'REACT.JS | PUBLIC APIs | ALAN AI',
