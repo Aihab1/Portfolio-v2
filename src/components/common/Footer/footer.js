@@ -10,7 +10,7 @@ const Footer = () => {
     return (
         <div className={classes.footerOuter + ' ' + (lightMode && ' ' + classes.light)}>
             <p>Designed and Developed by</p>
-            <h1><a href="https://github.com/aihab1" target="_blank">Aihab Umair</a></h1>
+            <h1><a href="https://linkedin.com/in/aihabumair" target="_blank">Aihab Umair</a></h1>
             <br></br>
             <p>Built and Integrated with</p>
             <a href="https://www.gatsbyjs.com/" target="_blank">

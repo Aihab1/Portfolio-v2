@@ -16,7 +16,7 @@ Purple/Blue - #371BB1
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: outro 0.5s ease-out forwards 3s;
+    animation: outro 0.5s ease-out forwards 2.5s;
     z-index: 1000;
 }
 
@@ -25,34 +25,39 @@ Purple/Blue - #371BB1
 }
 
 .logocontainer {
-    animation: outro 0.5s ease-out forwards 3s;
+    animation: outro 0.5s ease-out forwards 2.5s;
     fill: #371BB1;
 }
 
 .logocontainer :nth-child(1) {
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
-    animation: appear 1.5s ease-in-out forwards;
+    animation: appear 1s ease-in-out forwards;
+    transform: translateX(-100%);
 }
 .logocontainer :nth-child(2) {
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
-    animation: appear 1.5s ease-in-out forwards 0.4s;
+    animation: appear 1s ease-in-out forwards 0.3s;
+    transform: translateX(-100%);
 }
 .logocontainer :nth-child(3) {
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
-    animation: appear 1.5s ease-in-out forwards 0.8s;
+    animation: appear 1s ease-in-out forwards 0.6s;
+    transform: translateX(-100%);
 }
 .logocontainer :nth-child(4) {
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
-    animation: appear 1.5s ease-in-out forwards 1.2s;
+    animation: appear 1s ease-in-out forwards 0.9s;
+    transform: translateX(-100%);
 }
 .logocontainer :nth-child(5) {
     stroke-dasharray: 500px;
     stroke-dashoffset: 500px;
-    animation: appear 1.5s ease-in-out forwards 1.4s;
+    animation: appear 1s ease-in-out forwards 1.2s;
+    transform: translateX(-100%);
 }
 
 @keyframes appear {
@@ -60,6 +65,7 @@ Purple/Blue - #371BB1
         stroke-dasharray: 0;
         stroke-dashoffset: 0;
         filter: hue-rotate(330deg);
+        transform: translateX(0);
     }
 }
 
@@ -69,5 +75,11 @@ Purple/Blue - #371BB1
         width: 100%;
         pointer-events: none;
         position: absolute;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .logocontainer {
+        transform: scale(0.6);
     }
 }
