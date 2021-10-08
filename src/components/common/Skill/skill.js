@@ -6,7 +6,8 @@ const Skill = (props) => {
     const [{ lightMode }, dispatch] = useStateValue();
     return (
         <div className={classes.skill + ' ' + (lightMode && ' ' + classes.light)}>
-            {props.name}
+            <p>{props.name}</p>
+            <img src={props.img} alt={props.name} />
         </div>
     )
 }

@@ -30,35 +30,45 @@ const About = () => {
                     </div>
                     <h1>Programming Languages</h1>
                     <div className={classes.grid}>
-                        <Skill name="Javascript (ES6)" />
-                        <Skill name="HTML" />
-                        <Skill name="CSS/Sass" />
-                        <Skill name="C++" />
-                        <Skill name="Java" />
-                        <Skill name="Python" />
-                        <Skill name="SQL (ORMs)" />
+                        <Skill name="JavaScript" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+                        <Skill name="HTML" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" />
+                        <Skill name="CSS" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+                        <Skill name="Sass" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+                        <Skill name="C" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg" />
+                        <Skill name="C++" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" />
+                        <Skill name="Java" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" />
+                        <Skill name="Python" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" />
+                        <Skill name="MySQL" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" />
+                        <Skill name="PostgreSQL" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" />
+                        <Skill name="SQLAlchemy" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlalchemy/sqlalchemy-original.svg" />
                     </div>
                     <h1>Libraries & Frameworks</h1>
                     <div className={classes.grid}>
-                        <Skill name="jQuery" />
-                        <Skill name="React" />
-                        <Skill name="Gatsby" />
-                        <Skill name="Node.js" />
-                        <Skill name="Express" />
-                        <Skill name="MongoDB" />
-                        <Skill name="Flask" />
-                        <Skill name="Django" />
-                        <Skill name="Pygame" />
+                        <Skill name="React" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+                        <Skill name="Redux" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
+                        <Skill name="Gatsby" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-plain.svg" />
+                        <Skill name="Node.js" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" />
+                        <Skill name="Next.js" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-line.svg" />
+                        <Skill name="Express" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" />
+                        <Skill name="MongoDB" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" />
+                        <Skill name="Jest" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" />
+                        <Skill name="Flask" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" />
+                        <Skill name="Django" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-original.svg" />
+                        <Skill name="jQuery" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original.svg" />
+                        <Skill name="Socket.io" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/socketio/socketio-original.svg" />
+                        <Skill name="Pygame" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pycharm/pycharm-original.svg" />
+                        <Skill name="Bootstrap" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain.svg" />
+                        <Skill name="Material UI" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg" />
+                        <Skill name="Tailwindcss" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" />
                     </div>
                     <h1>Tools & Platforms</h1>
                     <div className={classes.grid}>
-                        <Skill name="Git" />
-                        <Skill name="Github" />
-                        <Skill name="Heroku" />
-                        <Skill name="Netlify" />
-                        <Skill name="Firebase" />
-                        <Skill name="Postman" />
-                        <Skill name="VSCode" />
+                        <Skill name="Git" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" />
+                        <Skill name="Github" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" />
+                        <Skill name="Heroku" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg" />
+                        <Skill name="Firebase" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" />
+                        <Skill name="VSCode" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" />
+                        <Skill name="Figma" img="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
                     </div>
                     <div className={classes.background}></div>
                 </div>
