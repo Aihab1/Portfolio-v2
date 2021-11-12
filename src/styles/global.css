@@ -21,6 +21,10 @@ hr {
   border: 1px solid #3500d3;
 }
 
+body {
+  overflow: overlay; 
+}
+
 .outermost-index-div {
   background: #000;
   color: white;
@@ -35,7 +39,7 @@ hr {
 
 ::-webkit-scrollbar {
   background-color: transparent;
-  width: 10px;
+  width: 7px;
   transition: all 0.5s ease;
 }
 
@@ -50,7 +54,6 @@ hr {
 /* scrollbar itself */
 ::-webkit-scrollbar-thumb {
   background-color: #7e859c;
-  border: 2px solid white;
   border-radius: 5px;
 }
 
