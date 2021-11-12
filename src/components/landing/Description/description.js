@@ -6,12 +6,12 @@ import { useStateValue } from '../../../contextapi/StateProvider'
 import * as classes from './description.module.css'
 
 const Description = () => {
-    const [{ lightMode }, dispatch] = useStateValue();
+    const [{ lightMode }] = useStateValue();
     return (
-        <div id="description" className={classes.outer + ' ' + (lightMode && ' ' + classes.light)}>
+        <div id="description" className={`${classes.outer} ${(lightMode && classes.light)}`}>
             <div className={classes.description}>
                 <p>Hi, my name is</p>
-                <h1 className={classes.myName + ' ' + (lightMode && ' ' + classes.light)}>Aihab Umair.</h1>
+                <h1 className={`${classes.myName} ${(lightMode && classes.light)}`}>Aihab Umair.</h1>
                 <h1>I develop websites that deliver.</h1>
                 <p>I am an engineering student at the Indian Institute of Technology (BHU), Varanasi. I like pretty much everything related to web development. Free? Let's build something together!</p>
 

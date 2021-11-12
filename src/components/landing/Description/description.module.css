@@ -15,23 +15,23 @@
 
 .description :nth-child(1) {
   opacity: 0;
-  animation: appear 1s ease-in forwards 2.5s;
+  animation: appear 1s ease-in forwards;
 }
 .description :nth-child(2) {
   opacity: 0;
-  animation: appear 1s ease-in forwards 2.8s;
+  animation: appear 1s ease-in forwards 0.3s;
 }
 .description :nth-child(3) {
   opacity: 0;
-  animation: appear 1s ease-in forwards 2.8s;
+  animation: appear 1s ease-in forwards 0.3s;
 }
 .description :nth-child(4) {
   opacity: 0;
-  animation: appear 1s ease-in forwards 3s;
+  animation: appear 1s ease-in forwards 0.5s;
 }
 .description :nth-child(5) {
   opacity: 0;
-  animation: appear 1s ease-in forwards 3.3s;
+  animation: appear 1s ease-in forwards 0.8s;
 }
 
 .description h1 {
@@ -56,7 +56,7 @@
   height: 100%;
   z-index: 0;
   opacity: 0.8;
-  animation: slide-in 1s ease-out forwards 3.3s;
+  animation: slide-in 1s ease-out forwards 0.8s;
 }
 
 .outer.light .background {

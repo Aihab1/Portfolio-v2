@@ -168,7 +168,7 @@ export const allProjects = [{
 }]
 
 const ProjectsGrid = () => {
-    const [{ lightMode }, dispatch] = useStateValue();
+    const [{ lightMode }] = useStateValue();
     const all = []
     for (let project of allProjects) {
         all.push(
@@ -181,7 +181,7 @@ const ProjectsGrid = () => {
 
                         {/* Links for github and website */}
                         {project.github &&
-                            <a href={project.github} target="_blank">
+                            <a href={project.github} target="_blank" rel="noreferrer">
                                 <p className={classes.projectLinks}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path
@@ -192,7 +192,7 @@ const ProjectsGrid = () => {
                             </a>}
 
                         {project.link &&
-                            <a href={project.link} target="_blank">
+                            <a href={project.link} target="_blank" rel="noreferrer">
                                 <p className={classes.projectLinks}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path
@@ -209,7 +209,7 @@ const ProjectsGrid = () => {
     }
 
     return (
-        <div className={classes.projectsOuter + ' ' + (lightMode && ' ' + classes.light)}>
+        <div className={`${classes.projectsOuter} ${(lightMode && classes.light)}`}>
             <div className={classes.subheading2}>
                 <hr></hr><p>PROJECTS ARCHIVE</p>
             </div>

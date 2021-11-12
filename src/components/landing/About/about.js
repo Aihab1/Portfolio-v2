@@ -7,9 +7,9 @@ import collegeImage from '../../../assets/images/iitbhu2.jpg'
 import * as classes from './about.module.css'
 
 const About = () => {
-    const [{ lightMode }, dispatch] = useStateValue();
+    const [{ lightMode }] = useStateValue();
     return (
-        <div id="about" className={classes.outer + ' ' + (lightMode && ' ' + classes.light)}>
+        <div id="about" className={`${classes.outer} ${(lightMode && classes.light)}`}>
             <div className={classes.about}>
                 <div className={classes.subheading}>
                     <p>ABOUT ME</p><hr></hr>

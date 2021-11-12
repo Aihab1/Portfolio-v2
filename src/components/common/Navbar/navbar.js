@@ -39,7 +39,6 @@ const Navbar = () => {
 
     const [navbarOpen, setNavbarOpen] = useState(false)
     const [{ lightMode }, dispatch] = useStateValue();
-    //const resumeURL = !props.lightMode ? '/resume' : '/resume?theme=light'
 
     const toggleLightMode = () => {
         let mode = lightMode === true ? 'dark' : 'light';
@@ -66,20 +65,20 @@ const Navbar = () => {
     }
 
     return (
-        <div className={classes.navbar + ' ' + (lightMode && ' ' + classes.light)}>
+        <div className={`${classes.navbar} ${(lightMode && classes.light)}`}>
             <Link to="/" className={classes.link}>
-                <div className={classes.logo + ' ' + (lightMode && ' ' + classes.light)}>
+                <div className={`${classes.logo} ${(lightMode && classes.light)}`}>
                     <Logo />
                 </div>
             </Link>
-            <div className={classes.links + ' ' + (navbarOpen && ' ' + classes.open)}>
+            <div className={`${classes.links} ${(navbarOpen && classes.open)}`}>
                 <div><Link to="/#about" onClick={navbarCloseHandler} className={classes.link}>ABOUT</Link></div>
                 <div><Link to="/#featuredProjects" onClick={navbarCloseHandler} className={classes.link}>PROJECTS</Link></div>
                 <div><Link to="/#contact" onClick={navbarCloseHandler} className={classes.link}>CONTACT</Link></div>
                 <div style={{ cursor: 'pointer' }} onClick={toggleLightMode} className={classes.link}>{lightMode ? 'DARK MODE' : 'LIGHT MODE'}</div>
-                <div><a href={resumeLink} target="_blank" onClick={navbarCloseHandler} className={classes.resumeButton}>RESUME</a></div>
+                <div><a href={resumeLink} target="_blank" rel="noreferrer" onClick={navbarCloseHandler} className={classes.resumeButton}>RESUME</a></div>
             </div>
-            <div className={classes.hamburger + ' ' + (navbarOpen && ' ' + classes.open)}>
+            <div className={`${classes.hamburger} ${(navbarOpen && classes.open)}`}>
                 <button onClick={navbarToggleHandler}>
                     <div></div>
                     <div></div>

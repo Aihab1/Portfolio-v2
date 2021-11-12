@@ -16,7 +16,6 @@ Purple/Blue - #371BB1
     display: flex;
     justify-content: center;
     align-items: center;
-    animation: outro 0.5s ease-out forwards 2.5s;
     z-index: 1000;
 }
 
