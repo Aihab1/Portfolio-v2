@@ -2,7 +2,6 @@ import React from 'react'
 import { useStateValue } from '../../../contextapi/StateProvider'
 
 import backgroundImage from '../../../assets/images/portfolio-v2.jpg'
-import contactBackground from '../../../assets/images/contactbackground.jpg'
 import * as classes from './contact.module.css'
 
 const Contact = () => {
@@ -14,7 +13,7 @@ const Contact = () => {
             </div>
             <h1>Contact me</h1>
             <div className={classes.contact}>
-                <div className={classes.contactBackground} style={{ background: `url(${contactBackground})`, 'backgroundRepeat': 'no-repeat', 'backgroundSize': 'cover'}}>
+                <div className={classes.contactBackground}>
                     <main>
                         <div className={classes.device}>
                             <section>

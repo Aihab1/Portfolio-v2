@@ -41,7 +41,7 @@ export default function Home() {
   useEffect(() => {
     setTimeout(() => {
       setShowIntro(false);
-    }, 2600)
+    }, 1650)
   }, [])
 
   if(showIntro) {

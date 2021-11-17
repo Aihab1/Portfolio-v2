@@ -176,7 +176,7 @@ const ProjectsGrid = () => {
                 <div className={classes.content}>
                     <div className={classes.contentInner}>
                         <p style={{ marginBottom: '10px', fontSize: '1.2rem' }}>{project.name}</p>
-                        <p style={{ marginBottom: '10px', fontSize: '0.8rem' }}>{project.tags}</p>
+                        <p style={{ marginBottom: '10px', fontSize: '0.9rem' }}>{project.tags}</p>
                         <p>{project.description}</p>
 
                         {/* Links for github and website */}
@@ -213,7 +213,6 @@ const ProjectsGrid = () => {
             <div className={classes.subheading2}>
                 <hr></hr><p>PROJECTS ARCHIVE</p>
             </div>
-            <h1 style={{ marginBottom: '20px' }}>Portfolio</h1>
             <div className={classes.projectsContainer}>
                 {all}
             </div>

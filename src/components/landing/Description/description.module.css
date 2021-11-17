@@ -2,7 +2,13 @@
   width: 100%;
   position: relative;
   overflow: hidden;
+  color: #eceded;
 }
+
+.outer.light {
+  color: #25282c;
+}
+
 .description {
   display: flex;
   flex-direction: column;
@@ -35,102 +41,92 @@
 }
 
 .description h1 {
-  font-size: 4rem;
+  font-size: 52px;
   z-index: 1;
-  line-height: 4.5rem;
+  line-height: 62px;
+  font-weight: 800;
+}
+
+.myName {
+  color: #5658dd;
 }
 
 .description p {
   width: 80%;
-  margin: 20px 0;
+  margin: 15px 0;
   z-index: 1;
+  font-weight: 300;
+  color: #9ca9b3;
+  font-size: 20px;
 }
 
-.background {
+.outer.light .description p {
+  color: #25282c;
+}
+
+.hi {
+  position: relative;
+}
+
+.hi::after {
+  content: 'Hi';
   position: absolute;
-  top: 0;
-  right: 0;
-  /* background: #190061; */
-  background: linear-gradient(to right,#000, #0c0032, #190061, #272471);
-  width: 0;
-  height: 100%;
-  z-index: 0;
-  opacity: 0.8;
-  animation: slide-in 1s ease-out forwards 0.8s;
+  top: -10px;
+  left: -50px;
+  font-size: 20rem;
+  font-weight: bold;
+  color: #2a2d32;
+  transform: translate(0, -30%);
+  z-index: -1;
+  opacity: 0;
+  animation: appear 1s ease-out forwards 1s;
 }
 
-.outer.light .background {
-  background: linear-gradient(to left, #C6B2CB,#C6B2CB, #fff);
+.outer.light .hi::after {
+  color: #b7b8ff;
 }
 
 .buttondiv {
   margin-top: 15px;
-  position: relative;
   z-index: 1;
 }
 
 .buttondiv button {
-  padding: 5px 15px 5px 50px;
-  border-radius: 25px;
+  padding: 11px 31px;
+  border-radius: 2px;
   outline: none;
-  border: 2px solid #3500d3;
-  background: transparent;
-  height: 40px;
-  color: white;
-  opacity: 0.8;
-  font-size: 0.8rem;
-  letter-spacing: 1px;
+  box-shadow: none;
+  background: #6163ff;
+  line-height: 24px;
+  color: #eceded;
+  font-size: 16px;
   z-index: 1;
   cursor: pointer;
+  border: none;
+  text-align: center;
 }
 
 .buttondiv button:hover {
-  background: rgba(53, 0, 211, 0.2);
+  background: #6b6dff;
 }
 
-.outer.light .buttondiv button:hover {
-  background: rgba(53, 0, 211, 0.3);
+.buttondiv :nth-child(2) button {
+  background: #25282c;
 }
 
-.outer.light .buttondiv button {
-  color: black;
-  border: 2px solid black;
+.buttondiv :nth-child(2) button:hover {
+  background: #2a2d32;
 }
 
-.outer.light .buttondiv button svg {
-  fill: #3500d3;
-}
-
-.myName.light {
-  color: #3500d3;
-}
-
-.buttondiv button svg {
-  position: absolute;
-  left: 10px;
-  top: 50%;
-  -ms-transform: translateY(-50%) rotate(90deg);
-  -webkit-transform: translateY(-50%) rotate(90deg);
-  transform: translateY(-50%) rotate(90deg);
-  transition: all 1s ease !important;
-}
-
-.buttondiv button:hover > svg {
-  -ms-transform: translateY(-50%) rotate(450deg);
-  -webkit-transform: translateY(-50%) rotate(450deg);
-  transform: translateY(-50%) rotate(450deg);
+.buttondiv a {
+  margin-right: 16px;
+  margin-top: 8px;
+  margin-bottom: 8px;
 }
 
 @keyframes appear {
   to {
     opacity: 1;
-  }
-}
-
-@keyframes slide-in {
-  100% {
-    width: 75%;
-    right: 0;
   }
 }
 
@@ -159,6 +155,10 @@
     margin-top: 8px;
   }
   .buttondiv button {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
+  }
+  .hi::after {
+    font-size: 18rem;
+    left: -25px;
   }
 }

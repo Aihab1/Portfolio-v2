@@ -8,7 +8,6 @@ import Footer from '../components/common/Footer/footer'
 import ProjectsGrid from '../components/common/ProjectsGrid/projectsGrid'
 
 const Projects = () => {
-    //const [lightMode, setLightMode] = useState(props.location.search === '?theme=light')
     const [{ lightMode }, dispatch] = useStateValue();
 
     useEffect(() => {

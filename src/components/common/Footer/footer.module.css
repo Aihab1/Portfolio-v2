@@ -4,25 +4,75 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    color: white;
+    color: #9ca9b3;
     margin: 47.5px 0 0 0;
-    background: #090909;
     position: relative;
+    font-size: 14px;
 }
 
 .footerOuter.light {
-    background: #C6B2CB;
-    color: black;
+    color: #25282c;
 }
 
-.footerOuter h1 {
-    font-size: 1.8rem;
-    font-weight: 600;
+.links {
+    font-size: 15px;
+    color: #5658dd;
+    line-height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
 }
 
-.footerOuter img {
-    width: 150px;
-    margin-top: 10px;
+.socialLinks svg {
+    fill: #5658dd;
+    width: auto;
+    height: 25px;
+    padding: 0;
+    margin-left: 7px;
+    transition: none;
+}
+
+.socialLinks svg:hover {
+    fill: #eceded;
+}
+
+.footerOuter.light .socialLinks svg:hover {
+    fill: #25282c;
+}
+
+.footerName a {
+    color: #eceded;
+}
+
+.footerOuter.light .footerName a {
+    color: #5658dd;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-around;
+}
+
+.navLinks div {
+    margin-left: 15px;
+}
+
+.footerDetails {
+    font-size: 14px;
+    line-height: 22px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footerDetails a:hover {
+    color: #eceded;
+}
+
+.footerOuter.light .footerDetails a:hover {
+    color: #5658dd;
 }
 
 .footerOuter a {
@@ -38,6 +88,38 @@
 @media screen and (max-width: 850px) {
     .footerOuter {
         padding: 30px 5%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .links {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .socialLinks {
+        margin-top: 20px;
+        position: absolute;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        text-align: center;
+    }
+    .socialLinks svg {
+        margin: 0 7px;
+    }
+    .navLinks div {
+        margin: 0 7px;
+    }
+    .footerDetails {
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-bottom: 40px;
+    }
+    .navLinks {
+        margin-bottom: 7px;
+        flex-wrap: wrap;
     }
 }
 

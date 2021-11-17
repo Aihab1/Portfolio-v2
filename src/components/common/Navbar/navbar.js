@@ -27,7 +27,7 @@ const Navbar = () => {
             last_scroll_top = scroll_top;
 
             if (scroll_top === 0) {
-                smartScrollbar.style = "box-shadow: none; background: transparent;";
+                smartScrollbar.style = "box-shadow: none; background: transparent; margin-top: 0";
             }
             else {
                 smartScrollbar.style = "box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);"
@@ -72,11 +72,11 @@ const Navbar = () => {
                 </div>
             </Link>
             <div className={`${classes.links} ${(navbarOpen && classes.open)}`}>
-                <div><Link to="/#about" onClick={navbarCloseHandler} className={classes.link}>ABOUT</Link></div>
-                <div><Link to="/#featuredProjects" onClick={navbarCloseHandler} className={classes.link}>PROJECTS</Link></div>
-                <div><Link to="/#contact" onClick={navbarCloseHandler} className={classes.link}>CONTACT</Link></div>
-                <div style={{ cursor: 'pointer' }} onClick={toggleLightMode} className={classes.link}>{lightMode ? 'DARK MODE' : 'LIGHT MODE'}</div>
-                <div><a href={resumeLink} target="_blank" rel="noreferrer" onClick={navbarCloseHandler} className={classes.resumeButton}>RESUME</a></div>
+                <div><Link to="/#about" onClick={navbarCloseHandler} className={classes.link}>About</Link></div>
+                <div><Link to="/#featuredProjects" onClick={navbarCloseHandler} className={classes.link}>Projects</Link></div>
+                <div><Link to="/#contact" onClick={navbarCloseHandler} className={classes.link}>Contact</Link></div>
+                <div style={{ cursor: 'pointer' }} onClick={toggleLightMode} className={classes.link}>{lightMode ? 'Dark Mode' : 'Light Mode'}</div>
+                <div><a href={resumeLink} target="_blank" rel="noreferrer" onClick={navbarCloseHandler} className={classes.resumeButton}>Resume</a></div>
             </div>
             <div className={`${classes.hamburger} ${(navbarOpen && classes.open)}`}>
                 <button onClick={navbarToggleHandler}>
