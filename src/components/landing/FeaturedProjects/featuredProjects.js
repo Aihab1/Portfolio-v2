@@ -107,7 +107,11 @@ const FeaturedProjects = () => {
           <p>FEATURED PROJECTS</p>
           <hr></hr>
         </div>
-        <button onClick={animHandler} className={classes.projectButton}>
+        <button
+          title="Project Counter"
+          onClick={animHandler}
+          className={classes.projectButton}
+        >
           # {count + 1}
         </button>
         <div className={`${classes.project1} ${anim && classes.anim}`}>
@@ -146,18 +150,28 @@ const FeaturedProjects = () => {
           </div>
         </div>
         <div className={classes.buttondiv}>
-            <button onClick={animHandler}>View Next</button>
+          <button title="Switch Projects" onClick={animHandler}>
+            View Next
+          </button>
         </div>
         <div id="otherProjects" className={classes.otherProjects}>
           <h2>Other noteworthy projects</h2>
           <Link
             to="/projects"
-            style={{ textDecoration: "none", marginBottom: "20px", color: "#5658dd", padding: '10px 20px', border: "2px solid #5658dd", borderRadius: '2px' }}
+            style={{
+              textDecoration: "none",
+              marginBottom: "20px",
+              color: "#5658dd",
+              padding: "10px 20px",
+              border: "2px solid #5658dd",
+              borderRadius: "2px",
+            }}
           >
             <p>View Complete Archive</p>
           </Link>
           <div className={classes.otherProjectsInner}>{displayProjects}</div>
           <button
+            title="Show More Projects"
             className={classes.showMoreButton}
             onClick={displayProjectsChangeHandler}
           >

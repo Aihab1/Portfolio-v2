@@ -225,6 +225,9 @@
     max-width: 100%;
     backdrop-filter: none;
   }
+  .outer.light .content {
+    box-shadow: none;
+  }
 }
 
 @media screen and (max-width: 670px) {

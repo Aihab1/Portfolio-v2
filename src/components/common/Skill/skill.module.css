@@ -53,25 +53,8 @@
     background: #b7b8ff;
 }
 
-/* .skill.light {
-    border: 2px solid #3500d3;
-    background: white;
-    color: black;
-    opacity: 1;
-}
-
-.skill.light p {
-    color: white;
-}
-
-.skill.light:hover {
-    opacity: 1;
-    background: #240090;
-    color: white;
-} */
-
 @media screen and (max-width: 850px) {
-    .skill {
+    .skill, .skill.light {
         height: 90px;
         width: 90px;
         opacity: 0.9;
@@ -79,7 +62,7 @@
 }
 
 @media screen and (max-width: 500px) {
-    .skill {
+    .skill, .skill.light {
         font-size: 0.9rem;
         height: 85px;
         width: 85px;

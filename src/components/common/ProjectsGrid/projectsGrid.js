@@ -96,7 +96,7 @@ export const allProjects = [{
 }, {
     name: 'Book Review Website',
     imageSrc: peekaabookImage,
-    tags: 'FLASK | POSTGRESQL | AUTHENTICATION',
+    tags: 'FLASK | POSTGRESQL',
     description: 'This was the first full fledged project which I made as an independent developer. It uses flask sessions for authentication and postgresql, flask sqlalchemy for keeping various data fields in place. Users can browse books by genre, search a book by its author(s), isbn or name, read & write reviews and also see ratings given by community members. It was initially integrated with Goodreads API which was later replaced by GoogleBooks API to improve functionality.',
     time: 'July 2020',
     github: 'https://github.com/Aihab1/Peekaabook',

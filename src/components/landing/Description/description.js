@@ -17,12 +17,12 @@ const Description = () => {
 
                 <div className={classes.buttondiv}>
                     <Link to="/#about">
-                        <button>
+                        <button title="View Portfolio">
                             View Portfolio
                         </button>
                     </Link>
                     <a href={resumeLink} target="_blank" rel="noreferrer">
-                        <button>
+                        <button title="Resume">
                             Resume
                         </button>
                     </a>
