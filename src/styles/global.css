@@ -21,7 +21,7 @@ hr {
 }
 
 body {
-  overflow: overlay; 
+  overflow: overlay;
 }
 
 .outermost-index-div {
@@ -38,7 +38,7 @@ body {
 }
 
 .outermost-index-div.light a {
-  color: black;
+  color: #2a2d32;
 }
 .outermost-index-div.light img {
   opacity: 1;
@@ -118,22 +118,22 @@ img {
 
 .scrolled-down {
   -webkit-transform: translateY(-110%);
-          transform: translateY(-110%);
+  transform: translateY(-110%);
   background: transparent;
   margin-top: 0;
 }
 
 .scrolled-up {
   -webkit-transform: translateY(0);
-          transform: translateY(0);
+  transform: translateY(0);
   background: rgba(37, 40, 44, 0.95);
   margin-top: 15px;
 }
 
 .scrolled-down-permanent {
   -webkit-transform: translateY(0);
-          transform: translateY(0);
-          background: rgba(9, 9, 9, 0.95);
+  transform: translateY(0);
+  background: rgba(9, 9, 9, 0.95);
   margin-top: 0;
   width: 100% !important;
 }
@@ -158,5 +158,9 @@ img {
 @media screen and (max-width: 500px) {
   .scrolled-up {
     margin-top: 5px;
+  }
+  .scrolled-down-permanent,
+  .scrolled-down {
+    margin-top: 0;
   }
 }
