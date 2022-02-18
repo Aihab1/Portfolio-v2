@@ -1,12 +1,10 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Heebo", "Poppins", "Roboto", "sans-serif";
+  font-family: "Heebo", "sans-serif";
   transition: all 0.5s ease;
   scroll-behavior: smooth;
 }
@@ -14,28 +12,41 @@
 hr {
   box-shadow: none;
   outline: none;
-  border: 1px solid white;
+  border: 1.5px solid #5658dd;
+  border-radius: 10px;
 }
 
 .outermost-index-div.light hr {
-  border: 1px solid #3500d3;
+  border: 1px solid #565ded;
+}
+
+body {
+  overflow: overlay;
 }
 
 .outermost-index-div {
-  background: #000;
-  color: white;
-  /* overflow: hidden;
-    animation: outro 0.5s ease-out forwards 4.5s; */
+  background: #151719;
+  color: #9ca9b3;
 }
 
 .outermost-index-div.light {
-  background: white;
-  color: black;
+  background: #eceded;
+}
+
+.outermost-index-div.light p {
+  font-weight: 400;
+}
+
+.outermost-index-div.light a {
+  color: #2a2d32;
+}
+.outermost-index-div.light img {
+  opacity: 1;
 }
 
 ::-webkit-scrollbar {
   background-color: transparent;
-  width: 10px;
+  width: 7px;
   transition: all 0.5s ease;
 }
 
@@ -47,19 +58,16 @@ hr {
   background-color: transparent;
 }
 
-/* scrollbar itself */
 ::-webkit-scrollbar-thumb {
-  background-color: #7e859c;
-  border: 2px solid white;
+  background-color: #2a2d32;
   border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #3500d3;
+  background-color: #5658dd;
   opacity: 0.8;
 }
 
-/* set (top and bottom of the scrollbar) */
 ::-webkit-scrollbar-button {
   display: none;
 }
@@ -72,31 +80,14 @@ hr {
   align-items: center;
 }
 
-p {
-  font-weight: 200;
-}
-
-.outermost-index-div.light p {
-  font-weight: 400;
-}
-
 a {
   text-decoration: none;
-  color: white;
-}
-
-.outermost-index-div.light a {
-  color: black;
+  color: #9ca9b3;
 }
 
 img {
   pointer-events: none;
 }
-
-.outermost-index-div.light img {
-  opacity: 1;
-}
-
 
 .outermost-div {
   width: 100%;
@@ -113,57 +104,63 @@ img {
   padding: 47.5px 0;
 }
 
-
-/* NAVBAR ANIM */
 .smart-scroll {
   position: fixed;
   top: 0;
   right: 0;
   left: 0;
-  width: 100%;
-  /* overflow: hidden;*/
   height: 66px;
   z-index: 109;
+  width: calc(80% + 50px);
+  margin: 0 auto;
+  border-radius: 2px;
 }
 
 .scrolled-down {
   -webkit-transform: translateY(-110%);
-          transform: translateY(-110%);
+  transform: translateY(-110%);
   background: transparent;
+  margin-top: 0;
 }
 
 .scrolled-up {
   -webkit-transform: translateY(0);
-          transform: translateY(0);
-  background: rgba(9, 9, 9, 0.95);
-  /* backdrop-filter: blur(15px); */
+  transform: translateY(0);
+  background: rgba(37, 40, 44, 0.95);
+  margin-top: 15px;
 }
 
 .scrolled-down-permanent {
   -webkit-transform: translateY(0);
-          transform: translateY(0);
-          background: rgba(9, 9, 9, 0.95);
-          /* backdrop-filter: blur(10px); */
+  transform: translateY(0);
+  background: rgba(9, 9, 9, 0.95);
+  margin-top: 0;
+  width: 100% !important;
 }
 
 .outermost-index-div.light .scrolled-up {
-  background: rgba(255, 255, 255, 0.9);
-  /* backdrop-filter: blur(10px); */
+  background: rgb(183, 184, 255, 0.95);
 }
 
 .outermost-index-div.light .scrolled-down-permanent {
-  background: rgba(255, 255, 255, 0.9);
-  /* backdrop-filter: blur(10px); */
+  background: rgba(236, 237, 237, 0.95);
 }
-
-/* @keyframes outro {
-    to{
-        overflow: auto;
-    }
-} */
 
 @media screen and (max-width: 1100px) {
   .projects-outer {
     width: 90%;
+  }
+  .smart-scroll {
+    width: calc(90% + 30px);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .scrolled-up {
+    margin-top: 5px;
+  }
+  .scrolled-down-permanent,
+  .scrolled-down {
+    margin-top: 0;
   }
 }

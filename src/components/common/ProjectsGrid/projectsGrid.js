@@ -96,7 +96,7 @@ export const allProjects = [{
 }, {
     name: 'Book Review Website',
     imageSrc: peekaabookImage,
-    tags: 'FLASK | POSTGRESQL | AUTHENTICATION',
+    tags: 'FLASK | POSTGRESQL',
     description: 'This was the first full fledged project which I made as an independent developer. It uses flask sessions for authentication and postgresql, flask sqlalchemy for keeping various data fields in place. Users can browse books by genre, search a book by its author(s), isbn or name, read & write reviews and also see ratings given by community members. It was initially integrated with Goodreads API which was later replaced by GoogleBooks API to improve functionality.',
     time: 'July 2020',
     github: 'https://github.com/Aihab1/Peekaabook',
@@ -168,7 +168,7 @@ export const allProjects = [{
 }]
 
 const ProjectsGrid = () => {
-    const [{ lightMode }, dispatch] = useStateValue();
+    const [{ lightMode }] = useStateValue();
     const all = []
     for (let project of allProjects) {
         all.push(
@@ -176,12 +176,12 @@ const ProjectsGrid = () => {
                 <div className={classes.content}>
                     <div className={classes.contentInner}>
                         <p style={{ marginBottom: '10px', fontSize: '1.2rem' }}>{project.name}</p>
-                        <p style={{ marginBottom: '10px', fontSize: '0.8rem' }}>{project.tags}</p>
+                        <p style={{ marginBottom: '10px', fontSize: '0.9rem' }}>{project.tags}</p>
                         <p>{project.description}</p>
 
                         {/* Links for github and website */}
                         {project.github &&
-                            <a href={project.github} target="_blank">
+                            <a href={project.github} target="_blank" rel="noreferrer">
                                 <p className={classes.projectLinks}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path
@@ -192,7 +192,7 @@ const ProjectsGrid = () => {
                             </a>}
 
                         {project.link &&
-                            <a href={project.link} target="_blank">
+                            <a href={project.link} target="_blank" rel="noreferrer">
                                 <p className={classes.projectLinks}>
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
                                         <path
@@ -209,11 +209,10 @@ const ProjectsGrid = () => {
     }
 
     return (
-        <div className={classes.projectsOuter + ' ' + (lightMode && ' ' + classes.light)}>
+        <div className={`${classes.projectsOuter} ${(lightMode && classes.light)}`}>
             <div className={classes.subheading2}>
                 <hr></hr><p>PROJECTS ARCHIVE</p>
             </div>
-            <h1 style={{ marginBottom: '20px' }}>Portfolio</h1>
             <div className={classes.projectsContainer}>
                 {all}
             </div>
