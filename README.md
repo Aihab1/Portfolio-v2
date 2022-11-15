@@ -106,9 +106,9 @@ A quick look at the react components you'll see in this project.
 
 | Color          | Hex                                                                |
 | -------------- | ------------------------------------------------------------------ |
-| Black Pearl    | ![#151719](https://via.placeholder.com/10/151719?text=+) `151719` |
-| Shark          | ![#25282c](https://via.placeholder.com/10/25282c?text=+) `25282c` |
-| Royal Purple   | ![#5658dd](https://via.placeholder.com/10/5658dd?text=+) `5658dd` |
-| Dried Lilac    | ![#b7b8ff](https://via.placeholder.com/10/b7b8ff?text=+) `b7b8ff` |
-| Cadet Grey     | ![#9ca9b3](https://via.placeholder.com/10/9ca9b3?text=+) `9ca9b3` |
-| Nearly White   | ![#eceded](https://via.placeholder.com/10/eceded?text=+) `eceded` |
+| Black Pearl    | ![151719](https://via.placeholder.com/10/151719?text=+) `#151719` |
+| Shark          | ![25282c](https://via.placeholder.com/10/25282c?text=+) `#25282c` |
+| Royal Purple   | ![5658dd](https://via.placeholder.com/10/5658dd?text=+) `#5658dd` |
+| Dried Lilac    | ![b7b8ff](https://via.placeholder.com/10/b7b8ff?text=+) `#b7b8ff` |
+| Cadet Grey     | ![9ca9b3](https://via.placeholder.com/10/9ca9b3?text=+) `#9ca9b3` |
+| Nearly White   | ![eceded](https://via.placeholder.com/10/eceded?text=+) `#eceded` |
