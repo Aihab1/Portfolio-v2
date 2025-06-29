@@ -3,7 +3,7 @@
 </p>
 
 <h1 align="center">
-  <a href="https://aihabumair.gatsbyjs.io">
+  <a href="https://startling-empanada-9349d4.netlify.app/">
     aihabumair.gatsbyjs.io
   </a>
 </h1>
